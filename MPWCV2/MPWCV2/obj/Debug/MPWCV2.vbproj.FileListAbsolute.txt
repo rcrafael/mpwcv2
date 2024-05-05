@@ -1,0 +1,270 @@
+D:\MPWC V2\MPWCV2\MPWCV2\bin\Debug\MPWCV2.exe.config
+D:\MPWC V2\MPWCV2\MPWCV2\bin\Debug\MPWCV2.exe
+D:\MPWC V2\MPWCV2\MPWCV2\bin\Debug\MPWCV2.pdb
+D:\MPWC V2\MPWCV2\MPWCV2\bin\Debug\MPWCV2.xml
+D:\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.FrmLogin.resources
+D:\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.Resources.resources
+D:\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.vbproj.GenerateResource.Cache
+D:\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.exe
+D:\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.xml
+D:\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.pdb
+D:\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmMain.resources
+D:\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmConnectionSettings.resources
+D:\MPWC V2\MPWCV2\MPWCV2\bin\Debug\MPWC.Data.dll
+D:\MPWC V2\MPWCV2\MPWCV2\bin\Debug\MPWC.UI.exe
+D:\MPWC V2\MPWCV2\MPWCV2\bin\Debug\MPWC.Data.pdb
+D:\MPWC V2\MPWCV2\MPWCV2\bin\Debug\MPWC.Data.xml
+D:\MPWC V2\MPWCV2\MPWCV2\bin\Debug\MPWC.UI.pdb
+D:\MPWC V2\MPWCV2\MPWCV2\bin\Debug\MPWC.UI.xml
+D:\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.FrmUserRegister.resources
+D:\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmUserRegistrationGrid.resources
+C:\Users\rafael\Documents\Visual Studio 2013\Projects\MPWC V2\MPWCV2\MPWCV2\bin\Debug\MPWCV2.exe.config
+C:\Users\rafael\Documents\Visual Studio 2013\Projects\MPWC V2\MPWCV2\MPWCV2\bin\Debug\MPWCV2.exe
+C:\Users\rafael\Documents\Visual Studio 2013\Projects\MPWC V2\MPWCV2\MPWCV2\bin\Debug\MPWCV2.pdb
+C:\Users\rafael\Documents\Visual Studio 2013\Projects\MPWC V2\MPWCV2\MPWCV2\bin\Debug\MPWCV2.xml
+C:\Users\rafael\Documents\Visual Studio 2013\Projects\MPWC V2\MPWCV2\MPWCV2\bin\Debug\MPWC.Data.dll
+C:\Users\rafael\Documents\Visual Studio 2013\Projects\MPWC V2\MPWCV2\MPWCV2\bin\Debug\MPWC.UI.exe
+C:\Users\rafael\Documents\Visual Studio 2013\Projects\MPWC V2\MPWCV2\MPWCV2\bin\Debug\MPWC.Data.pdb
+C:\Users\rafael\Documents\Visual Studio 2013\Projects\MPWC V2\MPWCV2\MPWCV2\bin\Debug\MPWC.Data.xml
+C:\Users\rafael\Documents\Visual Studio 2013\Projects\MPWC V2\MPWCV2\MPWCV2\bin\Debug\MPWC.UI.pdb
+C:\Users\rafael\Documents\Visual Studio 2013\Projects\MPWC V2\MPWCV2\MPWCV2\bin\Debug\MPWC.UI.xml
+D:\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmCustomerDetails.resources
+D:\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmMemberDetails.resources
+D:\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmWaterRating.resources
+D:\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmMeterReadingCustomerSearch.resources
+D:\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmMeterReadingDetails.resources
+D:\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmMeterReadingGrid.resources
+D:\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmCustomerLookup.resources
+D:\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmOfficialReceiptDetails.resources
+D:\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmOfficialReceiptGrid.resources
+D:\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmOfficialReceiptItemDetails.resources
+D:\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmReadingLookup.resources
+C:\Users\rafael\Documents\Visual Studio 2013\Projects\MPWC V2\MPWCV2_Compliled\MPWCV2.exe.config
+C:\Users\rafael\Documents\Visual Studio 2013\Projects\MPWC V2\MPWCV2_Compliled\MPWCV2.exe
+C:\Users\rafael\Documents\Visual Studio 2013\Projects\MPWC V2\MPWCV2_Compliled\MPWCV2.pdb
+C:\Users\rafael\Documents\Visual Studio 2013\Projects\MPWC V2\MPWCV2_Compliled\MPWCV2.xml
+C:\Users\rafael\Documents\Visual Studio 2013\Projects\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmCustomerLookup.resources
+C:\Users\rafael\Documents\Visual Studio 2013\Projects\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmOfficialReceiptDetails.resources
+C:\Users\rafael\Documents\Visual Studio 2013\Projects\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmOfficialReceiptGrid.resources
+C:\Users\rafael\Documents\Visual Studio 2013\Projects\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmOfficialReceiptItemDetails.resources
+C:\Users\rafael\Documents\Visual Studio 2013\Projects\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmReadingLookup.resources
+C:\Users\rafael\Documents\Visual Studio 2013\Projects\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmReadingLookupMobile.resources
+C:\Users\rafael\Documents\Visual Studio 2013\Projects\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmPartsSaleCustLookup.resources
+C:\Users\rafael\Documents\Visual Studio 2013\Projects\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmPartsSaleDetail.resources
+C:\Users\rafael\Documents\Visual Studio 2013\Projects\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmPartsSaleItemDetails.resources
+C:\Users\rafael\Documents\Visual Studio 2013\Projects\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.FrmLogin.resources
+C:\Users\rafael\Documents\Visual Studio 2013\Projects\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmMain.resources
+C:\Users\rafael\Documents\Visual Studio 2013\Projects\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmInventoryDetails.resources
+C:\Users\rafael\Documents\Visual Studio 2013\Projects\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmInventoryItemDetails.resources
+C:\Users\rafael\Documents\Visual Studio 2013\Projects\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmSalesDetails.resources
+C:\Users\rafael\Documents\Visual Studio 2013\Projects\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmSalesItemDetails.resources
+C:\Users\rafael\Documents\Visual Studio 2013\Projects\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmConnectionSettings.resources
+C:\Users\rafael\Documents\Visual Studio 2013\Projects\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmCustomerDetails.resources
+C:\Users\rafael\Documents\Visual Studio 2013\Projects\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmItemDetails.resources
+C:\Users\rafael\Documents\Visual Studio 2013\Projects\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmItemGrid.resources
+C:\Users\rafael\Documents\Visual Studio 2013\Projects\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmMemberDetails.resources
+C:\Users\rafael\Documents\Visual Studio 2013\Projects\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmMeterNoRegistryConnectionDetails.resources
+C:\Users\rafael\Documents\Visual Studio 2013\Projects\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmMeterNoRegistryConnectionGrid.resources
+C:\Users\rafael\Documents\Visual Studio 2013\Projects\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmMeterNoRegistryConnectionRegistryLookup.resources
+C:\Users\rafael\Documents\Visual Studio 2013\Projects\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmParticulars.resources
+C:\Users\rafael\Documents\Visual Studio 2013\Projects\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmUserAccess.resources
+C:\Users\rafael\Documents\Visual Studio 2013\Projects\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.FrmUserRegister.resources
+C:\Users\rafael\Documents\Visual Studio 2013\Projects\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmUserRegistrationGrid.resources
+C:\Users\rafael\Documents\Visual Studio 2013\Projects\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmCommercialRate.resources
+C:\Users\rafael\Documents\Visual Studio 2013\Projects\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmWaterRating.resources
+C:\Users\rafael\Documents\Visual Studio 2013\Projects\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.Resources.resources
+C:\Users\rafael\Documents\Visual Studio 2013\Projects\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmMeterReadingCustomerSearch.resources
+C:\Users\rafael\Documents\Visual Studio 2013\Projects\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmMeterReadingDetails.resources
+C:\Users\rafael\Documents\Visual Studio 2013\Projects\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmMeterReadingGrid.resources
+C:\Users\rafael\Documents\Visual Studio 2013\Projects\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmCBUReport.resources
+C:\Users\rafael\Documents\Visual Studio 2013\Projects\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmDividendReport.resources
+C:\Users\rafael\Documents\Visual Studio 2013\Projects\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmInventoryReport.resources
+C:\Users\rafael\Documents\Visual Studio 2013\Projects\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmOfficialReceiptReport.resources
+C:\Users\rafael\Documents\Visual Studio 2013\Projects\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmPatronageRefReport.resources
+C:\Users\rafael\Documents\Visual Studio 2013\Projects\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmReadingReport.resources
+C:\Users\rafael\Documents\Visual Studio 2013\Projects\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmSalesReport.resources
+C:\Users\rafael\Documents\Visual Studio 2013\Projects\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmSavingsReport.resources
+C:\Users\rafael\Documents\Visual Studio 2013\Projects\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmShareCapReport.resources
+C:\Users\rafael\Documents\Visual Studio 2013\Projects\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmVoucherReport.resources
+C:\Users\rafael\Documents\Visual Studio 2013\Projects\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmShareCapClosing.resources
+C:\Users\rafael\Documents\Visual Studio 2013\Projects\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.ShareCapBeginning.resources
+C:\Users\rafael\Documents\Visual Studio 2013\Projects\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.SyncBillingFromAndroidImport.resources
+C:\Users\rafael\Documents\Visual Studio 2013\Projects\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.SyncBillingToAndroidExport.resources
+C:\Users\rafael\Documents\Visual Studio 2013\Projects\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmVoucherDetails.resources
+C:\Users\rafael\Documents\Visual Studio 2013\Projects\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmVoucherItemDetails.resources
+C:\Users\rafael\Documents\Visual Studio 2013\Projects\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmWithdrawShares.resources
+C:\Users\rafael\Documents\Visual Studio 2013\Projects\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.vbproj.GenerateResource.Cache
+C:\Users\rafael\Documents\Visual Studio 2013\Projects\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.exe
+C:\Users\rafael\Documents\Visual Studio 2013\Projects\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.xml
+C:\Users\rafael\Documents\Visual Studio 2013\Projects\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.pdb
+C:\Users\rafael\Documents\Visual Studio 2013\Projects\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.vbprojAssemblyReference.cache
+C:\Users\rafael\Documents\Visual Studio 2013\Projects\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.vbproj.CoreCompileInputs.cache
+C:\Users\rafael\Documents\Visual Studio 2013\Projects\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.vbproj.CopyComplete
+C:\Users\rafael\Desktop\MPWC V2\MPWCV2_Compliled\MPWCV2.exe.config
+C:\Users\rafael\Desktop\MPWC V2\MPWCV2_Compliled\MPWCV2.exe
+C:\Users\rafael\Desktop\MPWC V2\MPWCV2_Compliled\MPWCV2.pdb
+C:\Users\rafael\Desktop\MPWC V2\MPWCV2_Compliled\MPWCV2.xml
+C:\Users\rafael\Desktop\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.vbproj.AssemblyReference.cache
+C:\Users\rafael\Desktop\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmCustomerLookup.resources
+C:\Users\rafael\Desktop\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmOfficialReceiptDetails.resources
+C:\Users\rafael\Desktop\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmOfficialReceiptGrid.resources
+C:\Users\rafael\Desktop\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmOfficialReceiptItemDetails.resources
+C:\Users\rafael\Desktop\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmReadingLookup.resources
+C:\Users\rafael\Desktop\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmReadingLookupMobile.resources
+C:\Users\rafael\Desktop\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmPartsSaleCustLookup.resources
+C:\Users\rafael\Desktop\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmPartsSaleDetail.resources
+C:\Users\rafael\Desktop\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmPartsSaleItemDetails.resources
+C:\Users\rafael\Desktop\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.FrmLogin.resources
+C:\Users\rafael\Desktop\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmMain.resources
+C:\Users\rafael\Desktop\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmInventoryDetails.resources
+C:\Users\rafael\Desktop\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmInventoryItemDetails.resources
+C:\Users\rafael\Desktop\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmSalesDetails.resources
+C:\Users\rafael\Desktop\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmSalesItemDetails.resources
+C:\Users\rafael\Desktop\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmConnectionSettings.resources
+C:\Users\rafael\Desktop\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmCustomerDetails.resources
+C:\Users\rafael\Desktop\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmItemDetails.resources
+C:\Users\rafael\Desktop\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmItemGrid.resources
+C:\Users\rafael\Desktop\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmMemberDetails.resources
+C:\Users\rafael\Desktop\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmMeterNoRegistryConnectionDetails.resources
+C:\Users\rafael\Desktop\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmMeterNoRegistryConnectionGrid.resources
+C:\Users\rafael\Desktop\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmMeterNoRegistryConnectionRegistryLookup.resources
+C:\Users\rafael\Desktop\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmParticulars.resources
+C:\Users\rafael\Desktop\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmUserAccess.resources
+C:\Users\rafael\Desktop\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.FrmUserRegister.resources
+C:\Users\rafael\Desktop\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmUserRegistrationGrid.resources
+C:\Users\rafael\Desktop\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmCommercialRate.resources
+C:\Users\rafael\Desktop\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmWaterRating.resources
+C:\Users\rafael\Desktop\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.Resources.resources
+C:\Users\rafael\Desktop\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmMeterReadingCustomerSearch.resources
+C:\Users\rafael\Desktop\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmMeterReadingDetails.resources
+C:\Users\rafael\Desktop\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmMeterReadingGrid.resources
+C:\Users\rafael\Desktop\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmCBUReport.resources
+C:\Users\rafael\Desktop\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmDividendReport.resources
+C:\Users\rafael\Desktop\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmInventoryReport.resources
+C:\Users\rafael\Desktop\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmOfficialReceiptReport.resources
+C:\Users\rafael\Desktop\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmPatronageRefReport.resources
+C:\Users\rafael\Desktop\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmReadingReport.resources
+C:\Users\rafael\Desktop\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmSalesReport.resources
+C:\Users\rafael\Desktop\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmSavingsReport.resources
+C:\Users\rafael\Desktop\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmShareCapReport.resources
+C:\Users\rafael\Desktop\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmVoucherReport.resources
+C:\Users\rafael\Desktop\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmShareCapClosing.resources
+C:\Users\rafael\Desktop\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.ShareCapBeginning.resources
+C:\Users\rafael\Desktop\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.SyncBillingFromAndroidImport.resources
+C:\Users\rafael\Desktop\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.SyncBillingToAndroidExport.resources
+C:\Users\rafael\Desktop\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmVoucherDetails.resources
+C:\Users\rafael\Desktop\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmVoucherItemDetails.resources
+C:\Users\rafael\Desktop\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmWithdrawShares.resources
+C:\Users\rafael\Desktop\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.vbproj.GenerateResource.cache
+C:\Users\rafael\Desktop\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.vbproj.CoreCompileInputs.cache
+C:\Users\rafael\Desktop\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.vbproj.CopyComplete
+C:\Users\rafael\Desktop\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.exe
+C:\Users\rafael\Desktop\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.xml
+C:\Users\rafael\Desktop\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.pdb
+C:\Users\rafael\Desktop\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmCommercialRateOld.resources
+C:\Users\rafael\Desktop\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmWaterRatingOld.resources
+D:\MPWC V2\MPWCV2_Compliled\MPWCV2.exe.config
+D:\MPWC V2\MPWCV2_Compliled\MPWCV2.exe
+D:\MPWC V2\MPWCV2_Compliled\MPWCV2.pdb
+D:\MPWC V2\MPWCV2_Compliled\MPWCV2.xml
+D:\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.vbproj.AssemblyReference.cache
+D:\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmReadingLookupMobile.resources
+D:\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmPartsSaleCustLookup.resources
+D:\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmPartsSaleDetail.resources
+D:\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmPartsSaleItemDetails.resources
+D:\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmInventoryDetails.resources
+D:\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmInventoryItemDetails.resources
+D:\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmSalesDetails.resources
+D:\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmSalesItemDetails.resources
+D:\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmItemDetails.resources
+D:\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmItemGrid.resources
+D:\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmMeterNoRegistryConnectionDetails.resources
+D:\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmMeterNoRegistryConnectionGrid.resources
+D:\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmMeterNoRegistryConnectionRegistryLookup.resources
+D:\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmParticulars.resources
+D:\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmUserAccess.resources
+D:\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmCommercialRateOld.resources
+D:\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmWaterRatingOld.resources
+D:\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmCommercialRate.resources
+D:\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmCBUReport.resources
+D:\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmDividendReport.resources
+D:\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmInventoryReport.resources
+D:\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmOfficialReceiptReport.resources
+D:\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmPatronageRefReport.resources
+D:\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmReadingReport.resources
+D:\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmSalesReport.resources
+D:\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmSavingsReport.resources
+D:\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmShareCapReport.resources
+D:\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmVoucherReport.resources
+D:\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmShareCapClosing.resources
+D:\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.ShareCapBeginning.resources
+D:\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.SyncBillingFromAndroidImport.resources
+D:\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.SyncBillingToAndroidExport.resources
+D:\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmVoucherDetails.resources
+D:\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmVoucherItemDetails.resources
+D:\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmWithdrawShares.resources
+D:\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.vbproj.CoreCompileInputs.cache
+D:\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.vbproj.CopyComplete
+D:\Rafael files\MPWC V2\MPWCV2_Compliled\MPWCV2.exe.config
+D:\Rafael files\MPWC V2\MPWCV2_Compliled\MPWCV2.exe
+D:\Rafael files\MPWC V2\MPWCV2_Compliled\MPWCV2.pdb
+D:\Rafael files\MPWC V2\MPWCV2_Compliled\MPWCV2.xml
+D:\Rafael files\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.vbproj.AssemblyReference.cache
+D:\Rafael files\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmCustomerLookup.resources
+D:\Rafael files\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmOfficialReceiptDetails.resources
+D:\Rafael files\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmOfficialReceiptGrid.resources
+D:\Rafael files\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmOfficialReceiptItemDetails.resources
+D:\Rafael files\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmReadingLookup.resources
+D:\Rafael files\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmReadingLookupMobile.resources
+D:\Rafael files\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmPartsSaleCustLookup.resources
+D:\Rafael files\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmPartsSaleDetail.resources
+D:\Rafael files\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmPartsSaleItemDetails.resources
+D:\Rafael files\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.FrmLogin.resources
+D:\Rafael files\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmMain.resources
+D:\Rafael files\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmInventoryDetails.resources
+D:\Rafael files\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmInventoryItemDetails.resources
+D:\Rafael files\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmSalesDetails.resources
+D:\Rafael files\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmSalesItemDetails.resources
+D:\Rafael files\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmConnectionSettings.resources
+D:\Rafael files\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmCustomerDetails.resources
+D:\Rafael files\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmItemDetails.resources
+D:\Rafael files\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmItemGrid.resources
+D:\Rafael files\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmMemberDetails.resources
+D:\Rafael files\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmMeterNoRegistryConnectionDetails.resources
+D:\Rafael files\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmMeterNoRegistryConnectionGrid.resources
+D:\Rafael files\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmMeterNoRegistryConnectionRegistryLookup.resources
+D:\Rafael files\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmParticulars.resources
+D:\Rafael files\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmUserAccess.resources
+D:\Rafael files\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.FrmUserRegister.resources
+D:\Rafael files\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmUserRegistrationGrid.resources
+D:\Rafael files\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmCommercialRateOld.resources
+D:\Rafael files\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmWaterRatingOld.resources
+D:\Rafael files\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmCommercialRate.resources
+D:\Rafael files\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmWaterRating.resources
+D:\Rafael files\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.Resources.resources
+D:\Rafael files\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmMeterReadingCustomerSearch.resources
+D:\Rafael files\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmMeterReadingDetails.resources
+D:\Rafael files\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmMeterReadingGrid.resources
+D:\Rafael files\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmCBUReport.resources
+D:\Rafael files\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmDividendReport.resources
+D:\Rafael files\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmInventoryReport.resources
+D:\Rafael files\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmOfficialReceiptReport.resources
+D:\Rafael files\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmPatronageRefReport.resources
+D:\Rafael files\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmReadingReport.resources
+D:\Rafael files\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmSalesReport.resources
+D:\Rafael files\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmSavingsReport.resources
+D:\Rafael files\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmShareCapReport.resources
+D:\Rafael files\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmVoucherReport.resources
+D:\Rafael files\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmShareCapClosing.resources
+D:\Rafael files\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.ShareCapBeginning.resources
+D:\Rafael files\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.SyncBillingFromAndroidImport.resources
+D:\Rafael files\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.SyncBillingToAndroidExport.resources
+D:\Rafael files\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmVoucherDetails.resources
+D:\Rafael files\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmVoucherItemDetails.resources
+D:\Rafael files\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmWithdrawShares.resources
+D:\Rafael files\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.vbproj.GenerateResource.cache
+D:\Rafael files\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.vbproj.CoreCompileInputs.cache
+D:\Rafael files\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.vbproj.Up2Date
+D:\Rafael files\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.exe
+D:\Rafael files\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.xml
+D:\Rafael files\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.pdb

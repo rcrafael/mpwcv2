@@ -1,0 +1,50 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Rafael files\\MPWC V2\\MPWC.UI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8F0CC422-EF35-47B4-8B34-B1047681BBBE}|..\\MPWCV2\\MPWCV2\\MPWCV2.vbproj|d:\\rafael files\\mpwc v2\\mpwcv2\\mpwcv2\\collection\\officialreceipt\\frmofficialreceiptdetails.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F0CC422-EF35-47B4-8B34-B1047681BBBE}|..\\MPWCV2\\MPWCV2\\MPWCV2.vbproj|d:\\rafael files\\mpwc v2\\mpwcv2\\mpwcv2\\collection\\officialreceipt\\frmofficialreceiptdetails.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "frmOfficialReceiptDetails.vb",
+              "DocumentMoniker": "D:\\Rafael files\\MPWC V2\\MPWCV2\\MPWCV2\\Collection\\OfficialReceipt\\frmOfficialReceiptDetails.vb",
+              "RelativeDocumentMoniker": "..\\MPWCV2\\MPWCV2\\Collection\\OfficialReceipt\\frmOfficialReceiptDetails.vb",
+              "ToolTip": "D:\\Rafael files\\MPWC V2\\MPWCV2\\MPWCV2\\Collection\\OfficialReceipt\\frmOfficialReceiptDetails.vb",
+              "RelativeToolTip": "..\\MPWCV2\\MPWCV2\\Collection\\OfficialReceipt\\frmOfficialReceiptDetails.vb",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAQwLABAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-04-23T16:15:30.689Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "frmOfficialReceiptDetails.vb [Design]",
+              "DocumentMoniker": "D:\\Rafael files\\MPWC V2\\MPWCV2\\MPWCV2\\Collection\\OfficialReceipt\\frmOfficialReceiptDetails.vb",
+              "RelativeDocumentMoniker": "..\\MPWCV2\\MPWCV2\\Collection\\OfficialReceipt\\frmOfficialReceiptDetails.vb",
+              "ToolTip": "D:\\Rafael files\\MPWC V2\\MPWCV2\\MPWCV2\\Collection\\OfficialReceipt\\frmOfficialReceiptDetails.vb [Design]",
+              "RelativeToolTip": "..\\MPWCV2\\MPWCV2\\Collection\\OfficialReceipt\\frmOfficialReceiptDetails.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-04-23T08:09:48.378Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

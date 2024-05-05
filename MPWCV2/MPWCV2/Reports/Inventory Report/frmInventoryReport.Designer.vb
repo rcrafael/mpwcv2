@@ -1,0 +1,203 @@
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+Partial Class frmInventoryReport
+    Inherits System.Windows.Forms.Form
+
+    'Form overrides dispose to clean up the component list.
+    <System.Diagnostics.DebuggerNonUserCode()> _
+    Protected Overrides Sub Dispose(ByVal disposing As Boolean)
+        Try
+            If disposing AndAlso components IsNot Nothing Then
+                components.Dispose()
+            End If
+        Finally
+            MyBase.Dispose(disposing)
+        End Try
+    End Sub
+
+    'Required by the Windows Form Designer
+    Private components As System.ComponentModel.IContainer
+
+    'NOTE: The following procedure is required by the Windows Form Designer
+    'It can be modified using the Windows Form Designer.  
+    'Do not modify it using the code editor.
+    <System.Diagnostics.DebuggerStepThrough()> _
+    Private Sub InitializeComponent()
+        Me.gpFilter = New System.Windows.Forms.GroupBox()
+        Me.dtpFrom = New System.Windows.Forms.DateTimePicker()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.dtpTo = New System.Windows.Forms.DateTimePicker()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.cboItemName = New System.Windows.Forms.ComboBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.CloseToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.GenerateReportToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.optInventoryAvailableStocks = New System.Windows.Forms.RadioButton()
+        Me.optInventoryListings = New System.Windows.Forms.RadioButton()
+        Me.optInventoryItemMasterlist = New System.Windows.Forms.RadioButton()
+        Me.gpFilter.SuspendLayout()
+        Me.MenuStrip1.SuspendLayout()
+        Me.SuspendLayout()
+        '
+        'gpFilter
+        '
+        Me.gpFilter.Controls.Add(Me.dtpFrom)
+        Me.gpFilter.Controls.Add(Me.Label3)
+        Me.gpFilter.Controls.Add(Me.dtpTo)
+        Me.gpFilter.Controls.Add(Me.Label2)
+        Me.gpFilter.Controls.Add(Me.cboItemName)
+        Me.gpFilter.Controls.Add(Me.Label1)
+        Me.gpFilter.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.gpFilter.Location = New System.Drawing.Point(12, 28)
+        Me.gpFilter.Name = "gpFilter"
+        Me.gpFilter.Size = New System.Drawing.Size(327, 118)
+        Me.gpFilter.TabIndex = 25
+        Me.gpFilter.TabStop = False
+        Me.gpFilter.Text = "Filter"
+        '
+        'dtpFrom
+        '
+        Me.dtpFrom.CustomFormat = "MMMM dd, yyyy"
+        Me.dtpFrom.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dtpFrom.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.dtpFrom.Location = New System.Drawing.Point(118, 20)
+        Me.dtpFrom.Name = "dtpFrom"
+        Me.dtpFrom.Size = New System.Drawing.Size(200, 22)
+        Me.dtpFrom.TabIndex = 6
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(13, 77)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(71, 13)
+        Me.Label3.TabIndex = 12
+        Me.Label3.Text = "Item Name:"
+        '
+        'dtpTo
+        '
+        Me.dtpTo.CustomFormat = "MMMM dd, yyyy"
+        Me.dtpTo.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dtpTo.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.dtpTo.Location = New System.Drawing.Point(118, 46)
+        Me.dtpTo.Name = "dtpTo"
+        Me.dtpTo.Size = New System.Drawing.Size(200, 22)
+        Me.dtpTo.TabIndex = 7
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(13, 54)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(57, 13)
+        Me.Label2.TabIndex = 11
+        Me.Label2.Text = "Date To:"
+        '
+        'cboItemName
+        '
+        Me.cboItemName.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cboItemName.FormattingEnabled = True
+        Me.cboItemName.Location = New System.Drawing.Point(118, 72)
+        Me.cboItemName.Name = "cboItemName"
+        Me.cboItemName.Size = New System.Drawing.Size(200, 24)
+        Me.cboItemName.TabIndex = 8
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(13, 28)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(69, 13)
+        Me.Label1.TabIndex = 10
+        Me.Label1.Text = "Date From:"
+        '
+        'MenuStrip1
+        '
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CloseToolStripMenuItem, Me.GenerateReportToolStripMenuItem})
+        Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
+        Me.MenuStrip1.Name = "MenuStrip1"
+        Me.MenuStrip1.Size = New System.Drawing.Size(473, 25)
+        Me.MenuStrip1.TabIndex = 26
+        Me.MenuStrip1.Text = "MenuStrip1"
+        '
+        'CloseToolStripMenuItem
+        '
+        Me.CloseToolStripMenuItem.Name = "CloseToolStripMenuItem"
+        Me.CloseToolStripMenuItem.Size = New System.Drawing.Size(48, 21)
+        Me.CloseToolStripMenuItem.Text = "Close"
+        '
+        'GenerateReportToolStripMenuItem
+        '
+        Me.GenerateReportToolStripMenuItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text
+        Me.GenerateReportToolStripMenuItem.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GenerateReportToolStripMenuItem.Name = "GenerateReportToolStripMenuItem"
+        Me.GenerateReportToolStripMenuItem.Size = New System.Drawing.Size(117, 21)
+        Me.GenerateReportToolStripMenuItem.Text = "Generate Report"
+        '
+        'optInventoryAvailableStocks
+        '
+        Me.optInventoryAvailableStocks.AutoSize = True
+        Me.optInventoryAvailableStocks.Location = New System.Drawing.Point(28, 188)
+        Me.optInventoryAvailableStocks.Name = "optInventoryAvailableStocks"
+        Me.optInventoryAvailableStocks.Size = New System.Drawing.Size(104, 17)
+        Me.optInventoryAvailableStocks.TabIndex = 27
+        Me.optInventoryAvailableStocks.TabStop = True
+        Me.optInventoryAvailableStocks.Text = "Available Stocks"
+        Me.optInventoryAvailableStocks.UseVisualStyleBackColor = True
+        '
+        'optInventoryListings
+        '
+        Me.optInventoryListings.AutoSize = True
+        Me.optInventoryListings.Location = New System.Drawing.Point(28, 211)
+        Me.optInventoryListings.Name = "optInventoryListings"
+        Me.optInventoryListings.Size = New System.Drawing.Size(107, 17)
+        Me.optInventoryListings.TabIndex = 28
+        Me.optInventoryListings.TabStop = True
+        Me.optInventoryListings.Text = "Inventory Listings"
+        Me.optInventoryListings.UseVisualStyleBackColor = True
+        '
+        'optInventoryItemMasterlist
+        '
+        Me.optInventoryItemMasterlist.AutoSize = True
+        Me.optInventoryItemMasterlist.Location = New System.Drawing.Point(28, 234)
+        Me.optInventoryItemMasterlist.Name = "optInventoryItemMasterlist"
+        Me.optInventoryItemMasterlist.Size = New System.Drawing.Size(92, 17)
+        Me.optInventoryItemMasterlist.TabIndex = 29
+        Me.optInventoryItemMasterlist.TabStop = True
+        Me.optInventoryItemMasterlist.Text = "Item Masterlist"
+        Me.optInventoryItemMasterlist.UseVisualStyleBackColor = True
+        '
+        'frmInventoryReport
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.ClientSize = New System.Drawing.Size(473, 372)
+        Me.Controls.Add(Me.optInventoryItemMasterlist)
+        Me.Controls.Add(Me.optInventoryListings)
+        Me.Controls.Add(Me.optInventoryAvailableStocks)
+        Me.Controls.Add(Me.gpFilter)
+        Me.Controls.Add(Me.MenuStrip1)
+        Me.Name = "frmInventoryReport"
+        Me.Text = "frmInventoryReport"
+        Me.gpFilter.ResumeLayout(False)
+        Me.gpFilter.PerformLayout()
+        Me.MenuStrip1.ResumeLayout(False)
+        Me.MenuStrip1.PerformLayout()
+        Me.ResumeLayout(False)
+        Me.PerformLayout()
+
+    End Sub
+    Friend WithEvents gpFilter As System.Windows.Forms.GroupBox
+    Friend WithEvents dtpFrom As System.Windows.Forms.DateTimePicker
+    Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents dtpTo As System.Windows.Forms.DateTimePicker
+    Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents cboItemName As System.Windows.Forms.ComboBox
+    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents MenuStrip1 As System.Windows.Forms.MenuStrip
+    Friend WithEvents CloseToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents GenerateReportToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents optInventoryAvailableStocks As System.Windows.Forms.RadioButton
+    Friend WithEvents optInventoryListings As System.Windows.Forms.RadioButton
+    Friend WithEvents optInventoryItemMasterlist As System.Windows.Forms.RadioButton
+End Class

@@ -1,0 +1,3 @@
+collection
+-remove previous balance field due to partial transaction capability.
+-able to view previous balance by browsing available or pending billing
