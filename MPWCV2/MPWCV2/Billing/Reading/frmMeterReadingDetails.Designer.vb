@@ -68,6 +68,8 @@ Partial Class frmMeterReadingDetails
         Me.chkRememberDT = New System.Windows.Forms.CheckBox()
         Me.grpMeteInfo = New System.Windows.Forms.GroupBox()
         Me.grpPayment = New System.Windows.Forms.GroupBox()
+        Me.txtSeptageFee = New System.Windows.Forms.TextBox()
+        Me.Label22 = New System.Windows.Forms.Label()
         Me.btnBrowseLess = New System.Windows.Forms.Button()
         Me.Label15 = New System.Windows.Forms.Label()
         Me.txtLess = New System.Windows.Forms.TextBox()
@@ -85,7 +87,7 @@ Partial Class frmMeterReadingDetails
         Me.Label1.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(11, 30)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(87, 16)
+        Me.Label1.Size = New System.Drawing.Size(86, 16)
         Me.Label1.TabIndex = 4
         Me.Label1.Text = "Reading No. :"
         '
@@ -121,7 +123,7 @@ Partial Class frmMeterReadingDetails
         Me.Label2.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.Location = New System.Drawing.Point(11, 114)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(88, 16)
+        Me.Label2.Size = New System.Drawing.Size(87, 16)
         Me.Label2.TabIndex = 6
         Me.Label2.Text = "Customer ID :"
         '
@@ -144,7 +146,7 @@ Partial Class frmMeterReadingDetails
         Me.Label3.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.Location = New System.Drawing.Point(11, 58)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(69, 16)
+        Me.Label3.Size = New System.Drawing.Size(68, 16)
         Me.Label3.TabIndex = 8
         Me.Label3.Text = "Meter No :"
         '
@@ -154,7 +156,7 @@ Partial Class frmMeterReadingDetails
         Me.Label4.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.Location = New System.Drawing.Point(11, 170)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(110, 16)
+        Me.Label4.Size = New System.Drawing.Size(109, 16)
         Me.Label4.TabIndex = 10
         Me.Label4.Text = "Customer Name :"
         '
@@ -188,7 +190,7 @@ Partial Class frmMeterReadingDetails
         Me.Label5.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.Location = New System.Drawing.Point(11, 202)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(91, 16)
+        Me.Label5.Size = New System.Drawing.Size(90, 16)
         Me.Label5.TabIndex = 12
         Me.Label5.Text = "Branch Code :"
         '
@@ -212,7 +214,7 @@ Partial Class frmMeterReadingDetails
         Me.Label6.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.Location = New System.Drawing.Point(11, 234)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(64, 16)
+        Me.Label6.Size = New System.Drawing.Size(63, 16)
         Me.Label6.TabIndex = 14
         Me.Label6.Text = "Address :"
         '
@@ -235,7 +237,7 @@ Partial Class frmMeterReadingDetails
         Me.Label7.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.Location = New System.Drawing.Point(11, 142)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(45, 16)
+        Me.Label7.Size = New System.Drawing.Size(44, 16)
         Me.Label7.TabIndex = 16
         Me.Label7.Text = "Alias :"
         '
@@ -255,7 +257,7 @@ Partial Class frmMeterReadingDetails
         Me.Label8.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.Location = New System.Drawing.Point(7, 24)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(52, 16)
+        Me.Label8.Size = New System.Drawing.Size(51, 16)
         Me.Label8.TabIndex = 17
         Me.Label8.Text = "Month :"
         '
@@ -298,7 +300,7 @@ Partial Class frmMeterReadingDetails
         Me.Label9.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label9.Location = New System.Drawing.Point(7, 51)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(46, 16)
+        Me.Label9.Size = New System.Drawing.Size(45, 16)
         Me.Label9.TabIndex = 22
         Me.Label9.Text = "From :"
         '
@@ -308,7 +310,7 @@ Partial Class frmMeterReadingDetails
         Me.Label10.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label10.Location = New System.Drawing.Point(7, 79)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(29, 16)
+        Me.Label10.Size = New System.Drawing.Size(28, 16)
         Me.Label10.TabIndex = 23
         Me.Label10.Text = "To :"
         '
@@ -318,7 +320,7 @@ Partial Class frmMeterReadingDetails
         Me.Label11.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label11.Location = New System.Drawing.Point(7, 107)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(70, 16)
+        Me.Label11.Size = New System.Drawing.Size(69, 16)
         Me.Label11.TabIndex = 24
         Me.Label11.Text = "Due Date :"
         '
@@ -341,7 +343,7 @@ Partial Class frmMeterReadingDetails
         Me.Label12.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label12.Location = New System.Drawing.Point(7, 54)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(61, 16)
+        Me.Label12.Size = New System.Drawing.Size(60, 16)
         Me.Label12.TabIndex = 29
         Me.Label12.Text = "Present :"
         '
@@ -362,7 +364,7 @@ Partial Class frmMeterReadingDetails
         Me.Label13.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label13.Location = New System.Drawing.Point(7, 82)
         Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(68, 16)
+        Me.Label13.Size = New System.Drawing.Size(67, 16)
         Me.Label13.TabIndex = 27
         Me.Label13.Text = "M3 Used :"
         '
@@ -383,7 +385,7 @@ Partial Class frmMeterReadingDetails
         Me.Label14.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label14.Location = New System.Drawing.Point(7, 26)
         Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(65, 16)
+        Me.Label14.Size = New System.Drawing.Size(64, 16)
         Me.Label14.TabIndex = 25
         Me.Label14.Text = "Previous :"
         '
@@ -403,7 +405,7 @@ Partial Class frmMeterReadingDetails
         Me.Label16.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label16.Location = New System.Drawing.Point(9, 57)
         Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(47, 16)
+        Me.Label16.Size = New System.Drawing.Size(46, 16)
         Me.Label16.TabIndex = 33
         Me.Label16.Text = "Parts :"
         '
@@ -426,7 +428,7 @@ Partial Class frmMeterReadingDetails
         Me.Label17.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label17.Location = New System.Drawing.Point(9, 29)
         Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(61, 16)
+        Me.Label17.Size = New System.Drawing.Size(60, 16)
         Me.Label17.TabIndex = 31
         Me.Label17.Text = "Amount :"
         '
@@ -436,7 +438,7 @@ Partial Class frmMeterReadingDetails
         Me.txtTotalAmount.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtTotalAmount.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtTotalAmount.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.txtTotalAmount.Location = New System.Drawing.Point(125, 138)
+        Me.txtTotalAmount.Location = New System.Drawing.Point(125, 166)
         Me.txtTotalAmount.Name = "txtTotalAmount"
         Me.txtTotalAmount.ReadOnly = True
         Me.txtTotalAmount.Size = New System.Drawing.Size(145, 22)
@@ -447,9 +449,9 @@ Partial Class frmMeterReadingDetails
         '
         Me.Label18.AutoSize = True
         Me.Label18.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label18.Location = New System.Drawing.Point(9, 141)
+        Me.Label18.Location = New System.Drawing.Point(9, 169)
         Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(43, 16)
+        Me.Label18.Size = New System.Drawing.Size(42, 16)
         Me.Label18.TabIndex = 37
         Me.Label18.Text = "Total :"
         '
@@ -458,7 +460,7 @@ Partial Class frmMeterReadingDetails
         Me.txtRemarks.BackColor = System.Drawing.Color.White
         Me.txtRemarks.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtRemarks.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtRemarks.Location = New System.Drawing.Point(125, 166)
+        Me.txtRemarks.Location = New System.Drawing.Point(125, 194)
         Me.txtRemarks.Multiline = True
         Me.txtRemarks.Name = "txtRemarks"
         Me.txtRemarks.Size = New System.Drawing.Size(229, 49)
@@ -468,9 +470,9 @@ Partial Class frmMeterReadingDetails
         '
         Me.Label19.AutoSize = True
         Me.Label19.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label19.Location = New System.Drawing.Point(9, 169)
+        Me.Label19.Location = New System.Drawing.Point(9, 197)
         Me.Label19.Name = "Label19"
-        Me.Label19.Size = New System.Drawing.Size(68, 16)
+        Me.Label19.Size = New System.Drawing.Size(67, 16)
         Me.Label19.TabIndex = 39
         Me.Label19.Text = "Remarks :"
         '
@@ -528,7 +530,7 @@ Partial Class frmMeterReadingDetails
         Me.Label21.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label21.Location = New System.Drawing.Point(11, 86)
         Me.Label21.Name = "Label21"
-        Me.Label21.Size = New System.Drawing.Size(84, 16)
+        Me.Label21.Size = New System.Drawing.Size(83, 16)
         Me.Label21.TabIndex = 43
         Me.Label21.Text = "Registry No :"
         '
@@ -570,7 +572,7 @@ Partial Class frmMeterReadingDetails
         Me.chkRememberDT.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.chkRememberDT.Location = New System.Drawing.Point(10, 138)
         Me.chkRememberDT.Name = "chkRememberDT"
-        Me.chkRememberDT.Size = New System.Drawing.Size(173, 20)
+        Me.chkRememberDT.Size = New System.Drawing.Size(172, 20)
         Me.chkRememberDT.TabIndex = 6
         Me.chkRememberDT.Text = "Remember Date Settings"
         Me.chkRememberDT.UseVisualStyleBackColor = True
@@ -593,6 +595,8 @@ Partial Class frmMeterReadingDetails
         '
         'grpPayment
         '
+        Me.grpPayment.Controls.Add(Me.txtSeptageFee)
+        Me.grpPayment.Controls.Add(Me.Label22)
         Me.grpPayment.Controls.Add(Me.btnBrowseLess)
         Me.grpPayment.Controls.Add(Me.Label15)
         Me.grpPayment.Controls.Add(Me.txtLess)
@@ -609,15 +613,36 @@ Partial Class frmMeterReadingDetails
         Me.grpPayment.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.grpPayment.Location = New System.Drawing.Point(717, 144)
         Me.grpPayment.Name = "grpPayment"
-        Me.grpPayment.Size = New System.Drawing.Size(365, 233)
+        Me.grpPayment.Size = New System.Drawing.Size(365, 285)
         Me.grpPayment.TabIndex = 45
         Me.grpPayment.TabStop = False
         Me.grpPayment.Text = "Payment Info"
         '
+        'txtSeptageFee
+        '
+        Me.txtSeptageFee.BackColor = System.Drawing.Color.LightGray
+        Me.txtSeptageFee.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtSeptageFee.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtSeptageFee.Location = New System.Drawing.Point(125, 110)
+        Me.txtSeptageFee.Name = "txtSeptageFee"
+        Me.txtSeptageFee.ReadOnly = True
+        Me.txtSeptageFee.Size = New System.Drawing.Size(145, 22)
+        Me.txtSeptageFee.TabIndex = 45
+        '
+        'Label22
+        '
+        Me.Label22.AutoSize = True
+        Me.Label22.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label22.Location = New System.Drawing.Point(9, 113)
+        Me.Label22.Name = "Label22"
+        Me.Label22.Size = New System.Drawing.Size(89, 16)
+        Me.Label22.TabIndex = 46
+        Me.Label22.Text = "Septage Fee :"
+        '
         'btnBrowseLess
         '
         Me.btnBrowseLess.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnBrowseLess.Location = New System.Drawing.Point(276, 111)
+        Me.btnBrowseLess.Location = New System.Drawing.Point(276, 139)
         Me.btnBrowseLess.Name = "btnBrowseLess"
         Me.btnBrowseLess.Size = New System.Drawing.Size(37, 23)
         Me.btnBrowseLess.TabIndex = 11
@@ -628,9 +653,9 @@ Partial Class frmMeterReadingDetails
         '
         Me.Label15.AutoSize = True
         Me.Label15.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label15.Location = New System.Drawing.Point(9, 113)
+        Me.Label15.Location = New System.Drawing.Point(9, 141)
         Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(44, 16)
+        Me.Label15.Size = New System.Drawing.Size(43, 16)
         Me.Label15.TabIndex = 44
         Me.Label15.Text = "Less :"
         '
@@ -640,7 +665,7 @@ Partial Class frmMeterReadingDetails
         Me.txtLess.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtLess.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtLess.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.txtLess.Location = New System.Drawing.Point(125, 110)
+        Me.txtLess.Location = New System.Drawing.Point(125, 138)
         Me.txtLess.Name = "txtLess"
         Me.txtLess.ReadOnly = True
         Me.txtLess.Size = New System.Drawing.Size(145, 22)
@@ -663,7 +688,7 @@ Partial Class frmMeterReadingDetails
         Me.Label20.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label20.Location = New System.Drawing.Point(9, 85)
         Me.Label20.Name = "Label20"
-        Me.Label20.Size = New System.Drawing.Size(116, 16)
+        Me.Label20.Size = New System.Drawing.Size(115, 16)
         Me.Label20.TabIndex = 41
         Me.Label20.Text = "Maintenance Fee :"
         '
@@ -744,4 +769,6 @@ Partial Class frmMeterReadingDetails
     Friend WithEvents btnBrowseRegistryNo As System.Windows.Forms.Button
     Friend WithEvents Label21 As System.Windows.Forms.Label
     Friend WithEvents txtRegistryNo As System.Windows.Forms.TextBox
+    Friend WithEvents txtSeptageFee As TextBox
+    Friend WithEvents Label22 As Label
 End Class

@@ -29,6 +29,7 @@ Public Class frmOfficialReceiptItemDetails
     Private _decMaintenance As Decimal = 0
     Private _decSeniorDiscount As Decimal = 0
     Private _dueDate As DateTime
+    Private _septageFee As Decimal = 0
 
 #Region "Properties"
     Private _dtDetails As DataTable
@@ -90,10 +91,12 @@ Public Class frmOfficialReceiptItemDetails
             .Add(CreateAmountColumn("SubReceivable", "SubReceivable", "SubReceivable", 2, False, True, 120))
             .Add(CreateAmountColumn("Penalty", "Penalty", "Penalty", 2, False, True, 120))
             .Add(CreateAmountColumn("OtherCollection", "Other Collection", "OtherCollection", 2, False, True, 120))
+            .Add(CreateAmountColumn("SeptageFee", "Septage Fee", "SeptageFee", 2, False, True, 120))
             .Add(CreateDataColumn("OtherDesc", "Other Description", "OtherDesc", False, True, 100))
             .Add(CreateDataColumn("Remarks", "Remarks", "Remarks", False, True, 100))
             .Add(CreateAmountColumn("SeniorDiscount", "Senior Discount", "SeniorDiscount", 2, False, True, 120))
             .Add(CreateAmountColumn("TotalAmount", "Total Amount", "TotalAmount", 2, False, True, 120))
+
             .Add(CreateHiddenColumn("Id"))
         End With
 
@@ -126,6 +129,7 @@ Public Class frmOfficialReceiptItemDetails
                 .Add("Remarks", GetType(String))
                 .Add("MaintenanceFee", GetType(Decimal))
                 .Add("SeniorDiscount", GetType(Decimal))
+                .Add("SeptageFee", GetType(Decimal))
             End With
         End If
         Dim drow As DataRow = _dtDetails.NewRow()
@@ -150,6 +154,8 @@ Public Class frmOfficialReceiptItemDetails
         drow("Remarks") = IIf(txtRemarks.Text.Trim = "", DBNull.Value, txtRemarks.Text.Trim)
         drow("MaintenanceFee") = IIf(txtMaintenance.Text.Trim = "", CDec(0), CDec(txtMaintenance.Text.Trim))
         drow("SeniorDiscount") = IIf(txtSeniorDiscount.Text.Trim = "", CDec(0), CDec(txtSeniorDiscount.Text.Trim))
+        drow("SeptageFee") = IIf(txtSeptageFee.Text.Trim = "", CDec(0), CDec(txtSeptageFee.Text.Trim))
+
         _dtDetails.Rows.Add(drow)
         gridIsDirty = True
 
@@ -178,6 +184,7 @@ Public Class frmOfficialReceiptItemDetails
         txtSeniorDiscount.Text = formatAmount(0)
         txtOtherDesc.Text = ""
         txtRemarks.Text = ""
+        txtSeptageFee.Text = formatAmount(0)
 
         ControlEnabled(True, dgvDetails)
         ControlEnabled(False, txtReadingId)
@@ -196,6 +203,7 @@ Public Class frmOfficialReceiptItemDetails
         ControlEnabled(False, btnMobiRdngId)
         ControlEnabled(False, btnReadingNo)
         ControlEnabled(False, txtSeniorDiscount)
+        ControlEnabled(False, txtSeptageFee)
 
         btnReadingNo.Focus()
     End Sub
@@ -249,6 +257,7 @@ Public Class frmOfficialReceiptItemDetails
         dtDetails.Rows(selectedRow)("TotalAmount") = CDec(txtTotalAmount.Text.Trim)
         dtDetails.Rows(selectedRow)("Remarks") = IIf(txtRemarks.Text.Trim = "", DBNull.Value, txtRemarks.Text.Trim)
         dtDetails.Rows(selectedRow)("SeniorDiscount") = CDec(txtSeniorDiscount.Text.Trim)
+        dtDetails.Rows(selectedRow)("SeptageFee") = CDec(txtSeptageFee.Text.Trim)
 
         ControlEnabled(True, dgvDetails)
         ControlEnabled(False, txtReadingId)
@@ -267,6 +276,7 @@ Public Class frmOfficialReceiptItemDetails
         ControlEnabled(False, btnMobiRdngId)
         ControlEnabled(False, btnReadingNo)
         ControlEnabled(False, txtSeniorDiscount)
+        ControlEnabled(False, txtSeptageFee)
 
     End Sub
 
@@ -290,6 +300,8 @@ Public Class frmOfficialReceiptItemDetails
         ControlEnabled(True, btnMobiRdngId)
         ControlEnabled(True, btnReadingNo)
         ControlEnabled(True, txtSeniorDiscount)
+        ControlEnabled(True, txtSeptageFee)
+
         btnReadingNo.Focus()
 
     End Sub
@@ -315,6 +327,8 @@ Public Class frmOfficialReceiptItemDetails
             ControlEnabled(False, btnMobiRdngId)
             ControlEnabled(False, btnReadingNo)
             ControlEnabled(False, txtSeniorDiscount)
+            ControlEnabled(False, txtSeptageFee)
+
             resetMenu()
         Else
             Me.DialogResult = Windows.Forms.DialogResult.Cancel
@@ -351,6 +365,8 @@ Public Class frmOfficialReceiptItemDetails
             txtTotalAmount.Text = formatAmount(dtDetails.Rows(selectedRow)("TotalAmount"))
             txtRemarks.Text = dtDetails.Rows(selectedRow)("Remarks").ToString
             txtSeniorDiscount.Text = formatAmount(dtDetails.Rows(selectedRow)("SeniorDiscount"))
+            txtSeptageFee.Text = formatAmount(dtDetails.Rows(selectedRow)("SeptageFee"))
+
         End If
 
     End Sub
@@ -376,7 +392,7 @@ Public Class frmOfficialReceiptItemDetails
             _decParts = formatAmount(objFrm.decParts)
             _decMaintenance = formatAmount(objFrm.decMaintenanceFee)
             _dueDate = objFrm.DueDate
-
+            _septageFee = formatAmount(objFrm.SeptageFee)
 
             If dr("MobiRdngId") Is DBNull.Value Then
                 _intMobiRdngId = Nothing
@@ -395,7 +411,7 @@ Public Class frmOfficialReceiptItemDetails
             _strPayRemarks = ""
             _decSeniorDiscount = 0
 
-            _decTotalAmount = _decReadingAmount + _decParts + _decMembership + _decTapping + _decCalibration + _decReconnection + _decSubReceivable + _decPenalty + _decOthers + _decMaintenance - _decSeniorDiscount
+            _decTotalAmount = _decReadingAmount + _decParts + _decMembership + _decTapping + _decCalibration + _decReconnection + _decSubReceivable + _decPenalty + _decOthers + _decMaintenance + _septageFee - _decSeniorDiscount
 
             txtReadingId.Text = _intReadingId.ToString
             txtMobiRdngID.Text = _intMobiRdngId.ToString
@@ -412,6 +428,8 @@ Public Class frmOfficialReceiptItemDetails
             txtTotalAmount.Text = formatAmount(_decTotalAmount)
             txtRemarks.Text = _strPayRemarks
             txtSeniorDiscount.Text = formatAmount(_decSeniorDiscount)
+            txtSeptageFee.Text = formatAmount(_septageFee)
+
 
             If Now.Date > _dueDate.Date Then
                 MsgBox("Selected reading period is already due. Penalty already applied.", MsgBoxStyle.Information)
@@ -485,6 +503,7 @@ Public Class frmOfficialReceiptItemDetails
             _decParts = dr("Parts")
             _decMaintenance = dr("MaintenanceFee")
             _intReadingId = dr("ReadingId")
+            _septageFee = dr("SeptageFee")
             _decMembership = 0
             _decTapping = 0
             _decCalibration = 0
@@ -497,7 +516,7 @@ Public Class frmOfficialReceiptItemDetails
             _decSeniorDiscount = 0
             _dueDate = dr("DueDate")
 
-            _decTotalAmount = _decReadingAmount + _decParts + _decMembership + _decTapping + _decCalibration + _decReconnection + _decSubReceivable + _decPenalty + _decOthers + _decMaintenance - _decSeniorDiscount
+            _decTotalAmount = _decReadingAmount + _decParts + _decMembership + _decTapping + _decCalibration + _decReconnection + _decSubReceivable + _decPenalty + _decOthers + _decMaintenance + _septageFee - _decSeniorDiscount
 
             txtReadingId.Text = _intReadingId.ToString
             txtMobiRdngID.Text = _intMobiRdngId.ToString
@@ -514,6 +533,8 @@ Public Class frmOfficialReceiptItemDetails
             txtTotalAmount.Text = formatAmount(_decTotalAmount)
             txtRemarks.Text = _strPayRemarks
             txtSeniorDiscount.Text = formatAmount(_decSeniorDiscount)
+            txtSeptageFee.Text = formatAmount(_septageFee)
+
 
             If Now.Date > _dueDate.Date Then
                 MsgBox("Selected reading period is already due. Penalty already applied.", MsgBoxStyle.Information)
@@ -529,9 +550,9 @@ Public Class frmOfficialReceiptItemDetails
     End Sub
 
     Private Sub ComputeTotalAmount()
-        txtTotalAmount.Text = formatAmount(CDec(txtReadingAmt.Text.Trim) + CDec(txtParts.Text.Trim) + CDec(txtMaintenance.Text.Trim) + _
-                                           CDec(txtMembership.Text.Trim) + CDec(txtSubReceivable.Text.Trim) + CDec(txtTapping.Text.Trim) + _
-                                           CDec(txtCalibration.Text.Trim) + CDec(txtReconnection.Text.Trim) + CDec(txtOthers.Text.Trim) + CDec(txtPenalty.Text.Trim) - CDec(txtSeniorDiscount.Text))
+        txtTotalAmount.Text = formatAmount(CDec(txtReadingAmt.Text.Trim) + CDec(txtParts.Text.Trim) + CDec(txtMaintenance.Text.Trim) +
+                                           CDec(txtMembership.Text.Trim) + CDec(txtSubReceivable.Text.Trim) + CDec(txtTapping.Text.Trim) +
+                                           CDec(txtCalibration.Text.Trim) + CDec(txtReconnection.Text.Trim) + CDec(txtOthers.Text.Trim) + CDec(txtPenalty.Text.Trim) + CDec(txtSeptageFee.Text.Trim) - CDec(txtSeniorDiscount.Text))
     End Sub
 
     Private Sub txtParts_Leave(sender As Object, e As EventArgs) Handles txtParts.Leave
@@ -615,4 +636,12 @@ Public Class frmOfficialReceiptItemDetails
         ComputeTotalAmount()
     End Sub
 
+    Private Sub txtSeptageFee_Leave(sender As Object, e As EventArgs) Handles txtSeptageFee.Leave
+        If IsNumeric(txtSeptageFee.Text.Trim) Then
+            txtSeptageFee.Text = formatAmount(txtSeptageFee.Text.Trim)
+        Else
+            txtSeptageFee.Text = formatAmount(0)
+        End If
+        ComputeTotalAmount()
+    End Sub
 End Class

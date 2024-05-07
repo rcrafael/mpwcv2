@@ -44,7 +44,7 @@ Public Class frmOfficialReceiptGrid
         MyBase.InitGrid()
 
         _dtHeader = New DataTable
-        _dtHeader = LoadDataTable("SELECT * FROM ORRH WHERE isPartSale = 0 ORDER BY EntryDate DESC")
+        _dtHeader = LoadDataTable("SELECT TOP 1000 * FROM ORRH WHERE isPartSale = 0 ORDER BY EntryDate DESC")
         _dtDetails = New DataTable
         _dtDetails = LoadDataTable("SELECT * FROM ORRD ORDER BY id ASC")
 
@@ -79,6 +79,8 @@ Public Class frmOfficialReceiptGrid
                     .Add(CreateDataColumn("MobileRdngNo", "Mobile Reading No", "MobiRdngNo", False, True, 100))
                     .Add(CreateAmountColumn("ReadingAmountPaid", "Reading Amount Paid", "ReadingAmountPaid", 2, False, True, 120))
                     .Add(CreateAmountColumn("Parts", "Parts", "Parts", 2, False, True, 120))
+                    .Add(CreateAmountColumn("MaintenanceFee", "Maintenance Fee", "MaintenanceFee", 2, False, True, 120))
+                    .Add(CreateAmountColumn("SeptageFee", "Septage Fee", "SeptageFee", 2, False, True, 120))
                     .Add(CreateAmountColumn("Membership", "Membership Fee", "Membership", 2, False, True, 120))
                     .Add(CreateAmountColumn("Tapping", "Tapping", "Tapping", 2, False, True, 120))
                     .Add(CreateAmountColumn("Calibration", "Calibration", "Calibration", 2, False, True, 120))
@@ -102,6 +104,8 @@ Public Class frmOfficialReceiptGrid
                     .Add(CreateDataColumn("MobileRdngNo", "Mobile Reading No", "MobiRdngNo", False, True, 100))
                     .Add(CreateAmountColumn("ReadingAmountPaid", "Reading Amount Paid", "ReadingAmountPaid", 2, False, True, 120))
                     .Add(CreateAmountColumn("Parts", "Parts", "Parts", 2, False, True, 120))
+                    .Add(CreateAmountColumn("MaintenanceFee", "Maintenance Fee", "MaintenanceFee", 2, False, True, 120))
+                    .Add(CreateAmountColumn("SeptageFee", "Septage Fee", "SeptageFee", 2, False, True, 120))
                     .Add(CreateAmountColumn("Membership", "Membership Fee", "Membership", 2, False, True, 120))
                     .Add(CreateAmountColumn("Tapping", "Tapping", "Tapping", 2, False, True, 120))
                     .Add(CreateAmountColumn("Calibration", "Calibration", "Calibration", 2, False, True, 120))
@@ -274,6 +278,8 @@ Public Class frmOfficialReceiptGrid
                 .Add(CreateDataColumn("MobileRdngNo", "Mobile Reading No", "MobiRdngNo", False, True, 100))
                 .Add(CreateAmountColumn("ReadingAmountPaid", "Reading Amount Paid", "ReadingAmountPaid", 2, False, True, 120))
                 .Add(CreateAmountColumn("Parts", "Parts", "Parts", 2, False, True, 120))
+                .Add(CreateAmountColumn("MaintenanceFee", "Maintenance Fee", "MaintenanceFee", 2, False, True, 120))
+                .Add(CreateAmountColumn("SeptageFee", "Septage Fee", "SeptageFee", 2, False, True, 120))
                 .Add(CreateAmountColumn("Membership", "Membership Fee", "Membership", 2, False, True, 120))
                 .Add(CreateAmountColumn("Tapping", "Tapping", "Tapping", 2, False, True, 120))
                 .Add(CreateAmountColumn("Calibration", "Calibration", "Calibration", 2, False, True, 120))
@@ -296,6 +302,8 @@ Public Class frmOfficialReceiptGrid
                 .Add(CreateDataColumn("MobileRdngNo", "Mobile Reading No", "MobiRdngNo", False, True, 100))
                 .Add(CreateAmountColumn("ReadingAmountPaid", "Reading Amount Paid", "ReadingAmountPaid", 2, False, True, 120))
                 .Add(CreateAmountColumn("Parts", "Parts", "Parts", 2, False, True, 120))
+                .Add(CreateAmountColumn("MaintenanceFee", "Maintenance Fee", "MaintenanceFee", 2, False, True, 120))
+                .Add(CreateAmountColumn("SeptageFee", "Septage Fee", "SeptageFee", 2, False, True, 120))
                 .Add(CreateAmountColumn("Membership", "Membership Fee", "Membership", 2, False, True, 120))
                 .Add(CreateAmountColumn("Tapping", "Tapping", "Tapping", 2, False, True, 120))
                 .Add(CreateAmountColumn("Calibration", "Calibration", "Calibration", 2, False, True, 120))

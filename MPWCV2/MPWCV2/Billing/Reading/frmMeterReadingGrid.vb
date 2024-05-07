@@ -29,12 +29,13 @@ Public Class frmMeterReadingGrid
             .Add(CreateAmountColumn("ReadingAmount", "Reading Amount", "ReadingAmount", 2, False, True, 100))
             .Add(CreateAmountColumn("Parts", "Parts", "Parts", 2, False, True, 100))
             .Add(CreateAmountColumn("MaintenanceFee", "MaintenanceFee", "MaintenanceFee", 2, False, True, 100))
+            .Add(CreateAmountColumn("SeptageFee", "Septage Fee", "SeptageFee", 2, False, True, 100))
             .Add(CreateAmountColumn("LessAmount", "Less Amount", "LessAmount", 2, False, True, 100))
             .Add(CreateAmountColumn("TotalAmount", "Total Amount", "TotalAmount", 2, False, True, 100))
             .Add(CreateComboBoxColumn("Status", "Status", "Status", LoadStatus, "id", "Status", False, True, 100))
         End With
 
-        dgvMain.DataSource = LoadDataTable("SELECT ReadingId,mobiRdngID,MeterNo,RegistryNo,CustId,Previous,Present,M3Used,ReadingAmount,Parts,MaintenanceFee,LessAmount,TotalAmount,Remarks,MonthOf,DateFrom,DateTo,DueDate,Status FROM RDNG ORDER BY DueDate DESC")
+        dgvMain.DataSource = LoadDataTable("SELECT TOP 1000 ReadingId,mobiRdngID,MeterNo,RegistryNo,CustId,Previous,Present,M3Used,ReadingAmount,Parts,MaintenanceFee,SeptageFee,LessAmount,TotalAmount,Remarks,MonthOf,DateFrom,DateTo,DueDate,Status FROM RDNG WITH (NOLOCK) ORDER BY DueDate DESC")
 
     End Sub
 
@@ -127,7 +128,7 @@ Public Class frmMeterReadingGrid
 
         strWhere = String.Format(" WHERE {0} LIKE '{1}%' ", strField, txtFindText.Text.Trim)
 
-        dgvMain.DataSource = LoadDataTable(String.Format("SELECT ReadingId,mobiRdngID,R.MeterNo,RegistryNo,R.CustId,Previous,Present,M3Used,ReadingAmount,Parts,MaintenanceFee,LessAmount,TotalAmount,Remarks,MonthOf,DateFrom,DateTo,DueDate,Status FROM RDNG R INNER JOIN CUST C ON R.CustID = C.CustID {0} ORDER BY DueDate DESC", strWhere))
+        dgvMain.DataSource = LoadDataTable(String.Format("SELECT ReadingId,mobiRdngID,R.MeterNo,RegistryNo,R.CustId,Previous,Present,M3Used,ReadingAmount,Parts,MaintenanceFee,SeptageFee,LessAmount,TotalAmount,Remarks,MonthOf,DateFrom,DateTo,DueDate,Status FROM RDNG R INNER JOIN CUST C ON R.CustID = C.CustID {0} ORDER BY DueDate DESC", strWhere))
 
         dgvMain.Columns.Clear()
         With dgvMain.Columns
@@ -146,6 +147,7 @@ Public Class frmMeterReadingGrid
             .Add(CreateDataColumn("Remarks", "Remarks", "Remarks", False, True, 250))
             .Add(CreateAmountColumn("ReadingAmount", "Reading Amount", "ReadingAmount", 2, False, True, 100))
             .Add(CreateAmountColumn("Parts", "Parts", "Parts", 2, False, True, 100))
+            .Add(CreateAmountColumn("SeptageFee", "Septage Fee", "SeptageFee", 2, False, True, 100))
             .Add(CreateAmountColumn("MaintenanceFee", "MaintenanceFee", "MaintenanceFee", 2, False, True, 100))
             .Add(CreateAmountColumn("LessAmount", "Less Amount", "LessAmount", 2, False, True, 100))
             .Add(CreateAmountColumn("TotalAmount", "Total Amount", "TotalAmount", 2, False, True, 100))

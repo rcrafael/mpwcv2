@@ -56,7 +56,7 @@ Public Class frmMeterReadingDetails
                 txtTotalAmount.Text = formatAmount(.Item("TotalAmount").ToString)
                 txtRemarks.Text = .Item("Remarks").ToString
                 txtMaintenance.Text = formatAmount(.Item("MaintenanceFee").ToString)
-
+                txtSeptageFee.Text = formatAmount(.Item("SeptageFee").ToString)
 
                 If getStringScalar(String.Format("SELECT BranchCode FROM CUST WHERE CustId = {0}", .Item("CustId"))) Is Nothing Then
                     cboBranchCode.SelectedIndex = -1
@@ -118,6 +118,7 @@ Public Class frmMeterReadingDetails
         'txtRemainingBal.Text = formatAmount(0)
         txtParts.Text = formatAmount(0)
         txtMaintenance.Text = formatAmount(5)
+        txtSeptageFee.Text = formatAmount(0)
         txtLess.Text = formatAmount(0)
         txtTotalAmount.Text = formatAmount(0)
 
@@ -177,8 +178,8 @@ Public Class frmMeterReadingDetails
 
         Dim cmd As New SqlCommand
         cmd.Connection = cn
-        cmd.CommandText = "INSERT INTO RDNG (CustId,MeterNo,Previous,Present,M3Used,ReadingAmount,Parts,TotalAmount,Remarks,MonthOf,DateFrom,DateTo,DueDate,DateUpdated,UpdateBy,Status,MaintenanceFee,LessAmount,RegistryNo) " &
-                            " VALUES (@CustId,@MeterNo,@Previous,@Present,@M3Used,@ReadingAmount,@Parts,@TotalAmount,@Remarks,@MonthOf,@DateFrom,@DateTo,@DueDate,@DateUpdated,@UpdateBy,@Status,@MaintenanceFee,@LessAmount,@RegistryNo)"
+        cmd.CommandText = "INSERT INTO RDNG (CustId,MeterNo,Previous,Present,M3Used,ReadingAmount,Parts,TotalAmount,Remarks,MonthOf,DateFrom,DateTo,DueDate,DateUpdated,UpdateBy,Status,MaintenanceFee,LessAmount,RegistryNo,SeptageFee) " &
+                            " VALUES (@CustId,@MeterNo,@Previous,@Present,@M3Used,@ReadingAmount,@Parts,@TotalAmount,@Remarks,@MonthOf,@DateFrom,@DateTo,@DueDate,@DateUpdated,@UpdateBy,@Status,@MaintenanceFee,@LessAmount,@RegistryNo,@SeptageFee)"
 
         With cmd.Parameters
             .AddWithValue("@CustId", txtCustId.Text.Trim)
@@ -200,6 +201,7 @@ Public Class frmMeterReadingDetails
             .AddWithValue("@MaintenanceFee", CDec(txtMaintenance.Text.Trim))
             .AddWithValue("@LessAmount", CDec(txtLess.Text.Trim))
             .AddWithValue("@RegistryNo", txtRegistryNo.Text.Trim)
+            .AddWithValue("@SeptageFee", CDec(txtSeptageFee.Text.Trim))
         End With
         cmd.ExecuteNonQuery()
         cmd.Dispose()
@@ -215,7 +217,7 @@ Public Class frmMeterReadingDetails
         Dim cmd As New SqlCommand
         cmd.Connection = cn
         cmd.CommandText = "UPDATE RDNG SET CustId = @CustId,MeterNo = @MeterNo,Previous = @Previous,Present = @Present,M3Used = @M3Used,ReadingAmount = @ReadingAmount,Parts = @Parts,TotalAmount = @TotalAmount,Remarks = @Remarks,MonthOf = @MonthOf,DateFrom = @DateFrom, " &
-                            " DateTo = @DateTo,DueDate = @DueDate,DateUpdated = @DateUpdated,UpdateBy = @UpdateBy,Status = @Status,MaintenanceFee = @MaintenanceFee, LessAmount = @LessAmount, RegistryNo = @RegistryNo WHERE ReadingId = @ReadingId"
+                            " DateTo = @DateTo,DueDate = @DueDate,DateUpdated = @DateUpdated,UpdateBy = @UpdateBy,Status = @Status,MaintenanceFee = @MaintenanceFee, LessAmount = @LessAmount, RegistryNo = @RegistryNo, SeptageFee = @SeptageFee WHERE ReadingId = @ReadingId"
 
 
         With cmd.Parameters
@@ -239,6 +241,7 @@ Public Class frmMeterReadingDetails
             .AddWithValue("@ReadingId", _ReadingNo)
             .AddWithValue("@LessAmount", CDec(txtLess.Text.Trim))
             .AddWithValue("@RegistryNo", txtRegistryNo.Text.Trim)
+            .AddWithValue("@SeptageFee", CDec(txtSeptageFee.Text.Trim))
         End With
         cmd.ExecuteNonQuery()
         cmd.Dispose()
@@ -299,6 +302,7 @@ Public Class frmMeterReadingDetails
 
         Return excess
     End Function
+
     Private Sub txtPresent_Leave(sender As Object, e As EventArgs) Handles txtPresent.Leave
         If txtPresent.Text.Trim <> "" Then
             If IsNumeric(txtPresent.Text.Trim) Then
@@ -325,86 +329,10 @@ Public Class frmMeterReadingDetails
 
                 If getCustomerType(txtCustId.Text.Trim) = 1 Then 'residential 1 commercial 2
 
-                    'If m3 <= 0 Then
-                    '    rating = CRate(0)
-
-                    'ElseIf m3 <= 10 And m3 > 0 Then
-                    '    rating = CRate(1)
-
-                    'ElseIf m3 <= 20 And m3 > 10 Then
-                    '    rating = CRate(2)
-
-                    'ElseIf m3 <= 30 And m3 > 20 Then
-                    '    rating = CRate(3)
-
-                    'ElseIf m3 <= 40 And m3 > 30 Then
-                    '    rating = CRate(4)
-
-                    'ElseIf m3 <= 50 And m3 > 40 Then
-                    '    rating = CRate(5)
-
-                    'ElseIf m3 <= 60 And m3 > 50 Then
-                    '    rating = CRate(6)
-
-                    'ElseIf m3 <= 70 And m3 > 60 Then
-                    '    rating = CRate(7)
-
-                    'ElseIf m3 <= 80 And m3 > 70 Then
-                    '    rating = CRate(8)
-
-                    'ElseIf m3 <= 90 And m3 > 80 Then
-                    '    rating = CRate(9)
-
-                    'ElseIf m3 <= 100 And m3 > 90 Then
-                    '    rating = CRate(10)
-
-                    'ElseIf m3 > 100 Then
-                    '    rating = CRate(11)
-
-                    'End If
-
-                    'Dim qoutient As Integer = 0
-                    'Dim remainder As Integer = 0
                     Dim baseAmount As Decimal = 0
                     Dim newBaseAmount As Decimal = 0
                     Dim newFinalAmount As Decimal = 0
                     Dim AmountInRate As Decimal = 0
-                    'Const fixedAmount As Decimal = 1452.5
-                    'Dim CrateCounter As Integer = 0
-                    'Dim excess As Integer = 0
-
-                    'qoutient = Math.Floor(m3 / 10)
-                    'remainder = m3 Mod 10
-
-                    'If m3 > 60 Then
-                    '    baseAmount = fixedAmount
-                    'Else
-                    '    baseAmount = 0
-                    'End If
-
-                    'For i As Integer = 1 To qoutient
-                    '    If m3 <= 60 Then
-                    '        baseAmount += CRate(i) * 10
-                    '        CrateCounter = i + 1
-                    '    Else
-                    '        If i < 8 Then
-                    '            i = 8
-                    '        End If
-
-                    '        If i >= 8 Then 'limit
-                    '            excess = (qoutient - 9) * 10
-                    '            baseAmount += CRate(i) * 10
-                    '            CrateCounter = i + 1
-                    '            Exit For
-                    '        Else
-                    '            If i > 8 Then
-                    '                baseAmount += CRate(i) * 10
-                    '            End If
-                    '        End If
-                    '        CrateCounter = i + 1
-                    '    End If
-                    'Next
-                    'AmountInRate = CRate(CrateCounter) * (remainder + excess)
 
                     If m3 <= 5 Then
                         baseAmount = 165.0
@@ -469,7 +397,56 @@ Public Class frmMeterReadingDetails
 
                 End If
 
-                txtTotalAmount.Text = formatAmount(CDec(txtAmount.Text.Trim) + CDec(txtParts.Text.Trim) + CDec(txtMaintenance.Text.Trim) - CDec(txtLess.Text.Trim))
+                Dim septageAmount As Double = 0
+
+
+                If m3 <= 10 Then
+                    septageAmount = SeptageRate(0)
+                ElseIf m3 = 11 Then
+                    septageAmount = SeptageRate(1)
+                ElseIf m3 = 12 Then
+                    septageAmount = SeptageRate(2)
+                ElseIf m3 = 13 Then
+                    septageAmount = SeptageRate(3)
+                ElseIf m3 = 14 Then
+                    septageAmount = SeptageRate(4)
+                ElseIf m3 = 15 Then
+                    septageAmount = SeptageRate(5)
+                ElseIf m3 = 16 Then
+                    septageAmount = SeptageRate(6)
+                ElseIf m3 = 17 Then
+                    septageAmount = SeptageRate(7)
+                ElseIf m3 = 18 Then
+                    septageAmount = SeptageRate(8)
+                ElseIf m3 = 19 Then
+                    septageAmount = SeptageRate(9)
+                ElseIf m3 = 20 Then
+                    septageAmount = SeptageRate(10)
+                ElseIf m3 = 21 Then
+                    septageAmount = SeptageRate(11)
+                ElseIf m3 = 22 Then
+                    septageAmount = SeptageRate(12)
+                ElseIf m3 = 23 Then
+                    septageAmount = SeptageRate(13)
+                ElseIf m3 = 24 Then
+                    septageAmount = SeptageRate(14)
+                ElseIf m3 = 25 Then
+                    septageAmount = SeptageRate(15)
+                ElseIf m3 = 26 Then
+                    septageAmount = SeptageRate(16)
+                ElseIf m3 = 27 Then
+                    septageAmount = SeptageRate(17)
+                ElseIf m3 = 28 Then
+                    septageAmount = SeptageRate(18)
+                ElseIf m3 = 29 Then
+                    septageAmount = SeptageRate(19)
+                ElseIf m3 >= 30 Then
+                    septageAmount = SeptageRate(20)
+                End If
+
+
+                txtSeptageFee.Text = formatAmount(septageAmount)
+                txtTotalAmount.Text = formatAmount(CDec(txtAmount.Text.Trim) + CDec(txtParts.Text.Trim) + CDec(txtMaintenance.Text.Trim) + septageAmount - CDec(txtLess.Text.Trim))
 
             Else
                 MsgBox("Input only numeric value!", MsgBoxStyle.Exclamation)
@@ -486,7 +463,7 @@ Public Class frmMeterReadingDetails
         If txtParts.Text.Trim <> "" Then
             If IsNumeric(txtParts.Text.Trim) Then
                 txtParts.Text = formatAmount(txtParts.Text.Trim)
-                txtTotalAmount.Text = formatAmount(CDec(txtAmount.Text.Trim) + CDec(txtParts.Text.Trim) + CDec(txtMaintenance.Text.Trim) - CDec(txtLess.Text.Trim))
+                txtTotalAmount.Text = formatAmount(CDec(txtAmount.Text.Trim) + CDec(txtParts.Text.Trim) + CDec(txtMaintenance.Text.Trim) + CDec(txtSeptageFee.Text.Trim) - CDec(txtLess.Text.Trim))
             Else
                 MsgBox("Input only numeric value!", MsgBoxStyle.Exclamation)
                 txtParts.Text = "0.00"
@@ -502,7 +479,7 @@ Public Class frmMeterReadingDetails
         If txtMaintenance.Text.Trim <> "" Then
             If IsNumeric(txtMaintenance.Text.Trim) Then
                 txtMaintenance.Text = formatAmount(txtMaintenance.Text.Trim)
-                txtTotalAmount.Text = formatAmount(CDec(txtAmount.Text.Trim) + CDec(txtParts.Text.Trim) + CDec(txtMaintenance.Text.Trim) - CDec(txtLess.Text.Trim))
+                txtTotalAmount.Text = formatAmount(CDec(txtAmount.Text.Trim) + CDec(txtParts.Text.Trim) + CDec(txtMaintenance.Text.Trim) + CDec(txtSeptageFee.Text.Trim) - CDec(txtLess.Text.Trim))
             Else
                 MsgBox("Input only numeric value!", MsgBoxStyle.Exclamation)
                 txtMaintenance.Text = "0.00"
@@ -626,9 +603,8 @@ Public Class frmMeterReadingDetails
     End Sub
 
     Private Sub txtLess_TextChanged(sender As Object, e As EventArgs) Handles txtLess.TextChanged
-        txtTotalAmount.Text = formatAmount(CDec(txtAmount.Text.Trim) + CDec(txtParts.Text.Trim) + CDec(txtMaintenance.Text.Trim) - CDec(txtLess.Text.Trim))
+        txtTotalAmount.Text = formatAmount(CDec(txtAmount.Text.Trim) + CDec(txtParts.Text.Trim) + CDec(txtMaintenance.Text.Trim) + CDec(txtSeptageFee.Text.Trim) - CDec(txtLess.Text.Trim))
     End Sub
-
 
     Private Function getCustomerType(ByVal pCustomerNo As Integer) As Integer
         Dim custType As Integer = 0
@@ -641,6 +617,23 @@ Public Class frmMeterReadingDetails
         Return custType
 
     End Function
+
+
+    Private Sub txtSeptageFee_Leave(sender As Object, e As EventArgs) Handles txtSeptageFee.Leave
+        If txtSeptageFee.Text.Trim <> "" Then
+            If IsNumeric(txtSeptageFee.Text.Trim) Then
+                txtSeptageFee.Text = formatAmount(txtSeptageFee.Text.Trim)
+                txtTotalAmount.Text = formatAmount(CDec(txtAmount.Text.Trim) + CDec(txtParts.Text.Trim) + CDec(txtMaintenance.Text.Trim) + CDec(txtSeptageFee.Text.Trim) - CDec(txtLess.Text.Trim))
+            Else
+                MsgBox("Input only numeric value!", MsgBoxStyle.Exclamation)
+                txtSeptageFee.Text = "0.00"
+                txtSeptageFee.SelectAll()
+                txtSeptageFee.Focus()
+            End If
+        Else
+            txtSeptageFee.Text = "0.00"
+        End If
+    End Sub
 
 
 

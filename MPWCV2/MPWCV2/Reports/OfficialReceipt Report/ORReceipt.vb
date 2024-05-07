@@ -19,9 +19,9 @@ Public Class ORReceipt
         strQuery = String.Format("SELECT A.ORNo,A.ORDate,C.Lname + ', ' + C.Fname + ' ' + C.Mname As CustomerName,C.Address,A.MeterNo,TotalAmountToPay FROM ORRH A " & _
                                 " LEFT JOIN CUST C ON A.CustomerNo = C.CustId WHERE A.ORNo = {0} ", pORNo)
 
-        strDetailsQuery = String.Format("SELECT SUM(ReadingAmountPaid) as WaterService,SUM(Parts) as Parts,SUM(Membership) as MemberShip, " & _
-                        " SUM(Tapping) as Tapping,SUM(Calibration) + SUM(MaintenanceFee) as Calibration ,SUM(Reconnection) As Reconnection, " & _
-                        " SUM(SubReceivable) As SubReceivable,SUM(Penalty) as Penalty,SUM(OtherCollection) as Others, SUM(SeniorDiscount) AS LessOthers FROM ORRD WHERE ORNo = {0}", pORNo)
+        strDetailsQuery = String.Format("SELECT SUM(ReadingAmountPaid) as WaterService,SUM(Parts) as Parts,SUM(Membership) as MemberShip, " &
+                        " SUM(Tapping) as Tapping,SUM(Calibration) + SUM(MaintenanceFee) as Calibration ,SUM(Reconnection) As Reconnection, " &
+                        " SUM(SubReceivable) As SubReceivable,SUM(Penalty) as Penalty,SUM(OtherCollection) as Others, SUM(SeniorDiscount) AS LessOthers, SUM(SeptageFee) AS SeptageFee FROM ORRD WHERE ORNo = {0}", pORNo)
 
     End Sub
 
@@ -56,26 +56,28 @@ Public Class ORReceipt
             .Cells("E18").Style.Numberformat.Format = CustomFormat.AMOUNTFORMAT
             .Cells("E19").Value = dtbDetails.Rows(0).Item("SubReceivable")
             .Cells("E19").Style.Numberformat.Format = CustomFormat.AMOUNTFORMAT
-            .Cells("E20").Value = dtbDetails.Rows(0).Item("Others")
+            .Cells("E20").Value = dtbDetails.Rows(0).Item("SeptageFee")
             .Cells("E20").Style.Numberformat.Format = CustomFormat.AMOUNTFORMAT
+            .Cells("E21").Value = dtbDetails.Rows(0).Item("Others")
+            .Cells("E21").Style.Numberformat.Format = CustomFormat.AMOUNTFORMAT
 
-            .Cells("E22").Formula = "=SUM(E9,E11,E12,E13,E14,E15,E16,E17,E18,E19,E20)"
-            .Cells("E22").Style.Numberformat.Format = CustomFormat.AMOUNTFORMAT
+            .Cells("E23").Formula = "=SUM(E9,E11,E12,E13,E14,E15,E16,E17,E18,E19,E20,E21)"
+            .Cells("E23").Style.Numberformat.Format = CustomFormat.AMOUNTFORMAT
 
-            .Cells("E24").Value = 0
             .Cells("E25").Value = 0
-            .Cells("E26").Value = dtbDetails.Rows(0).Item("LessOthers")
-            .Cells("E24").Style.Numberformat.Format = CustomFormat.AMOUNTFORMAT
+            .Cells("E26").Value = 0
+            .Cells("E27").Value = dtbDetails.Rows(0).Item("LessOthers")
             .Cells("E25").Style.Numberformat.Format = CustomFormat.AMOUNTFORMAT
             .Cells("E26").Style.Numberformat.Format = CustomFormat.AMOUNTFORMAT
+            .Cells("E27").Style.Numberformat.Format = CustomFormat.AMOUNTFORMAT
 
 
-            .Cells("E28").Formula = "=(E22 - SUM(E24,E25,E26))"
-            .Cells("E28").Style.Numberformat.Format = CustomFormat.AMOUNTFORMAT
+            .Cells("E29").Formula = "=(E23 - SUM(E25,E26,E27))"
+            .Cells("E29").Style.Numberformat.Format = CustomFormat.AMOUNTFORMAT
 
             .Cells("B10").Value = getMonths(dtb.Rows(0).Item("ORNo").ToString)
 
-            .Cells("A21").Value = getOtherDesc(dtb.Rows(0).Item("ORNo").ToString)
+            .Cells("A22").Value = getOtherDesc(dtb.Rows(0).Item("ORNo").ToString)
         End With
 
     End Sub

@@ -286,6 +286,12 @@
     <Compile Include="Maintenance\Particulars\frmParticularsGrid.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Maintenance\SeptageRate\frmSeptageRate.Designer.vb">
+      <DependentUpon>frmSeptageRate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Maintenance\SeptageRate\frmSeptageRate.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Maintenance\UserAccess\frmUserAccess.Designer.vb">
       <DependentUpon>frmUserAccess.vb</DependentUpon>
     </Compile>
@@ -579,6 +585,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Maintenance\Particulars\frmParticulars.resx">
       <DependentUpon>frmParticulars.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Maintenance\SeptageRate\frmSeptageRate.resx">
+      <DependentUpon>frmSeptageRate.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Maintenance\UserAccess\frmUserAccess.resx">
       <DependentUpon>frmUserAccess.vb</DependentUpon>

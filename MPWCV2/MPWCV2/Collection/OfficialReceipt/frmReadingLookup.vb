@@ -67,6 +67,16 @@ Public Class frmReadingLookup
         End Set
     End Property
 
+    Private _septageFee As Decimal
+    Public Property SeptageFee() As Decimal
+        Get
+            Return _septageFee
+        End Get
+        Set(ByVal value As Decimal)
+            _septageFee = value
+        End Set
+    End Property
+
 
     Public Overrides Sub InitForm()
         cboSearchType.DataSource = LoadSearchCategory()
@@ -74,16 +84,17 @@ Public Class frmReadingLookup
         cboSearchType.ValueMember = "id"
         cboSearchType.SelectedIndex = 0
 
-        sqlQuery = String.Format("SELECT A.ReadingId,A.MobiRdngId,A.MeterNo,A.Previous,A.Present,A.MonthOf, " & _
-                        " A.DateFrom,A.DateTo,A.DueDate,A.M3Used,A.Remarks, " & _
-                        " ISNULL(A.ReadingAmount,0.00) - (SUM(ISNULL(B.ReadingAmountPaid,0.00)) + SUM(ISNULL(A.LessAmount,0.00))) AS ReadingAmount, " & _
-                        " ISNULL(A.Parts,0.00) - SUM(ISNULL(B.Parts,0.00)) AS Parts, " & _
-                        " ISNULL(A.MaintenanceFee,0.00) - SUM(ISNULL(B.MaintenanceFee,0.00)) AS MaintenanceFee, " & _
-                        " ISNULL(A.ReadingAmount + A.Parts + A.MaintenanceFee,0.00) As TotalAmount, " & _
-                        " ((ISNULL(A.ReadingAmount + A.Parts + A.MaintenanceFee,0.00)) - (SUM(ISNULL(B.ReadingAmountPaid,0.00)) + SUM(ISNULL(B.Parts,0.00)) + SUM(ISNULL(B.MaintenanceFee,0.00)) - SUM(ISNULL(A.LessAmount,0.00)))) As RemainingBalance  " & _
-                        " FROM RDNG A LEFT JOIN ORRD B ON B.ReadingNo = A.ReadingId " & _
-                        " WHERE A.Status = 2 And A.CustId = {0} " & _
-                        " GROUP BY A.ReadingId,A.mobiRdngID,A.MeterNo,A.Previous,A.Present,A.MonthOf,A.DateFrom,A.DateTo,A.DueDate, A.M3Used, A.Remarks, A.ReadingAmount, A.Parts,A.MaintenanceFee " & _
+        sqlQuery = String.Format("SELECT A.ReadingId,A.MobiRdngId,A.MeterNo,A.Previous,A.Present,A.MonthOf, " &
+                        " A.DateFrom,A.DateTo,A.DueDate,A.M3Used,A.Remarks, " &
+                        " ISNULL(A.ReadingAmount,0.00) - (SUM(ISNULL(B.ReadingAmountPaid,0.00)) + SUM(ISNULL(A.LessAmount,0.00))) AS ReadingAmount, " &
+                        " ISNULL(A.Parts,0.00) - SUM(ISNULL(B.Parts,0.00)) AS Parts, " &
+                        " ISNULL(A.MaintenanceFee,0.00) - SUM(ISNULL(B.MaintenanceFee,0.00)) AS MaintenanceFee, " &
+                        " ISNULL(A.SeptageFee,0.00) - SUM(ISNULL(B.SeptageFee,0.00)) AS SeptageFee, " &
+                        " ISNULL(A.ReadingAmount + A.Parts + A.MaintenanceFee  + ISNULL(A.SeptageFee,0.00),0.00) As TotalAmount, " &
+                        " ((ISNULL(A.ReadingAmount + A.Parts + A.MaintenanceFee,0.00)) - (SUM(ISNULL(B.ReadingAmountPaid,0.00)) + SUM(ISNULL(B.Parts,0.00)) + SUM(ISNULL(B.MaintenanceFee,0.00)) +  SUM(ISNULL(B.SeptageFee,0.00)) - SUM(ISNULL(A.LessAmount,0.00)))) As RemainingBalance  " &
+                        " FROM RDNG A LEFT JOIN ORRD B ON B.ReadingNo = A.ReadingId " &
+                        " WHERE A.Status = 2 And A.CustId = {0} " &
+                        " GROUP BY A.ReadingId,A.mobiRdngID,A.MeterNo,A.Previous,A.Present,A.MonthOf,A.DateFrom,A.DateTo,A.DueDate, A.M3Used, A.Remarks, A.ReadingAmount, A.Parts, A.MaintenanceFee, A.SeptageFee " &
                         " ORDER BY A.DueDate ASC", _CustId)
         '" HAVING ((ISNULL(A.ReadingAmount + A.Parts + A.MaintenanceFee,0.00)) - (ISNULL(SUM(B.ReadingAmountPaid) + SUM(B.Parts) + SUM(B.MaintenanceFee),0.00))) < ISNULL(SUM(B.ReadingAmountPaid) + SUM(B.Parts) + SUM(B.MaintenanceFee),0.00) " & _
     End Sub
@@ -108,6 +119,7 @@ Public Class frmReadingLookup
             .Add(CreateAmountColumn("ReadingAmount", "Reading Amount", "ReadingAmount", 2, False, True, 100))
             .Add(CreateAmountColumn("Parts", "Parts", "Parts", 2, False, True, 100))
             .Add(CreateAmountColumn("MaintenanceFee", "Maintenance Fee", "MaintenanceFee", 2, False, True, 100))
+            .Add(CreateAmountColumn("SeptageFee", "Septage Fee", "SeptageFee", 2, False, True, 100))
             .Add(CreateAmountColumn("TotalAmount", "TotalAmount", "TotalAmount", 2, False, True, 100))
         End With
 
@@ -131,16 +143,17 @@ Public Class frmReadingLookup
     End Function
 
     Private Sub txtChange() Handles txtSearch.TextChanged
-        sqlQuery = String.Format("SELECT A.ReadingId,A.MobiRdngId,A.MeterNo,A.Previous,A.Present,A.MonthOf, " & _
-                        " A.DateFrom,A.DateTo,A.DueDate,A.M3Used,A.Remarks, " & _
-                        " ISNULL(A.ReadingAmount,0.00) - (SUM(ISNULL(B.ReadingAmountPaid,0.00)) + SUM(ISNULL(A.LessAmount,0.00))) AS ReadingAmount, " & _
-                        " ISNULL(A.Parts,0.00) - SUM(ISNULL(B.Parts,0.00)) AS Parts, " & _
-                        " ISNULL(A.MaintenanceFee,0.00) - SUM(ISNULL(B.MaintenanceFee,0.00)) AS MaintenanceFee, " & _
-                        " ISNULL(A.ReadingAmount + A.Parts + A.MaintenanceFee,0.00) As TotalAmount, " & _
-                        " ((ISNULL(A.ReadingAmount + A.Parts + A.MaintenanceFee,0.00)) - (SUM(ISNULL(B.ReadingAmountPaid,0.00)) + SUM(ISNULL(B.Parts,0.00)) + SUM(ISNULL(B.MaintenanceFee,0.00)) - SUM(ISNULL(A.LessAmount,0.00)))) As RemainingBalance  " & _
-                        " FROM RDNG A LEFT JOIN ORRD B ON B.ReadingNo = A.ReadingId " & _
-                        " WHERE A.Status = 2 And A.CustId = {0} AND A.{1} LIKE '{2}%' " & _
-                        " GROUP BY A.ReadingId,A.mobiRdngID,A.MeterNo,A.Previous,A.Present,A.MonthOf,A.DateFrom,A.DateTo,A.DueDate, A.M3Used, A.Remarks, A.ReadingAmount, A.Parts,A.MaintenanceFee " & _
+        sqlQuery = String.Format("SELECT A.ReadingId,A.MobiRdngId,A.MeterNo,A.Previous,A.Present,A.MonthOf, " &
+                        " A.DateFrom,A.DateTo,A.DueDate,A.M3Used,A.Remarks, " &
+                        " ISNULL(A.ReadingAmount,0.00) - (SUM(ISNULL(B.ReadingAmountPaid,0.00)) + SUM(ISNULL(A.LessAmount,0.00))) AS ReadingAmount, " &
+                        " ISNULL(A.Parts,0.00) - SUM(ISNULL(B.Parts,0.00)) AS Parts, " &
+                        " ISNULL(A.MaintenanceFee,0.00) - SUM(ISNULL(B.MaintenanceFee,0.00)) AS MaintenanceFee, " &
+                        " ISNULL(A.SeptageFee,0.00) - SUM(ISNULL(B.SeptageFee,0.00)) AS SeptageFee, " &
+                        " ISNULL(A.ReadingAmount + A.Parts + A.MaintenanceFee + + ISNULL(A.SeptageFee,0.00),0.00) As TotalAmount, " &
+                        " ((ISNULL(A.ReadingAmount + A.Parts + A.MaintenanceFee,0.00)) - (SUM(ISNULL(B.ReadingAmountPaid,0.00)) + SUM(ISNULL(B.Parts,0.00)) + SUM(ISNULL(B.MaintenanceFee,0.00)) +  SUM(ISNULL(B.SeptageFee,0.00)) - SUM(ISNULL(A.LessAmount,0.00)))) As RemainingBalance  " &
+                        " FROM RDNG A LEFT JOIN ORRD B ON B.ReadingNo = A.ReadingId " &
+                        " WHERE A.Status = 2 And A.CustId = {0} AND A.{1} LIKE '{2}%' " &
+                        " GROUP BY A.ReadingId,A.mobiRdngID,A.MeterNo,A.Previous,A.Present,A.MonthOf,A.DateFrom,A.DateTo,A.DueDate, A.M3Used, A.Remarks, A.ReadingAmount, A.Parts,A.MaintenanceFee, A.SeptageFee " &
                         " ORDER BY A.DueDate ASC", _CustId, cboSearchType.SelectedValue, txtSearch.Text.Trim)
         dgvLookup.DataSource = Nothing
         '" HAVING ((ISNULL(A.ReadingAmount + A.Parts + A.MaintenanceFee,0.00)) - (ISNULL(SUM(B.ReadingAmountPaid) + SUM(B.Parts) + SUM(B.MaintenanceFee),0.00))) < ISNULL(SUM(B.ReadingAmountPaid) + SUM(B.Parts) + SUM(B.MaintenanceFee),0.00) " & _
@@ -156,6 +169,7 @@ Public Class frmReadingLookup
             _decParts = dgvLookup.CurrentRow.Cells("Parts").Value
             _decMaintenanceFee = dgvLookup.CurrentRow.Cells("MaintenanceFee").Value
             _dueDate = dgvLookup.CurrentRow.Cells("DueDate").Value
+            _septageFee = dgvLookup.CurrentRow.Cells("SeptageFee").Value
         End If
 
         Me.DialogResult = Windows.Forms.DialogResult.OK

@@ -56,6 +56,8 @@ Partial Class frmOfficialReceiptItemDetails
         Me.txtMaintenance = New System.Windows.Forms.TextBox()
         Me.Label15 = New System.Windows.Forms.Label()
         Me.txtSeniorDiscount = New System.Windows.Forms.TextBox()
+        Me.Label16 = New System.Windows.Forms.Label()
+        Me.txtSeptageFee = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'txtReadingId
@@ -82,11 +84,11 @@ Partial Class frmOfficialReceiptItemDetails
         '
         Me.txtTotalAmount.BackColor = System.Drawing.Color.DarkGray
         Me.txtTotalAmount.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtTotalAmount.Location = New System.Drawing.Point(513, 428)
+        Me.txtTotalAmount.Location = New System.Drawing.Point(513, 456)
         Me.txtTotalAmount.Name = "txtTotalAmount"
         Me.txtTotalAmount.ReadOnly = True
         Me.txtTotalAmount.Size = New System.Drawing.Size(100, 22)
-        Me.txtTotalAmount.TabIndex = 5
+        Me.txtTotalAmount.TabIndex = 16
         Me.txtTotalAmount.TabStop = False
         Me.txtTotalAmount.Text = "0.00"
         Me.txtTotalAmount.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -144,10 +146,10 @@ Partial Class frmOfficialReceiptItemDetails
         'txtOthers
         '
         Me.txtOthers.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtOthers.Location = New System.Drawing.Point(513, 310)
+        Me.txtOthers.Location = New System.Drawing.Point(513, 338)
         Me.txtOthers.Name = "txtOthers"
         Me.txtOthers.Size = New System.Drawing.Size(100, 22)
-        Me.txtOthers.TabIndex = 10
+        Me.txtOthers.TabIndex = 11
         Me.txtOthers.Text = "0.00"
         Me.txtOthers.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -157,7 +159,7 @@ Partial Class frmOfficialReceiptItemDetails
         Me.Label1.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(52, 232)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(83, 16)
+        Me.Label1.Size = New System.Drawing.Size(82, 16)
         Me.Label1.TabIndex = 12
         Me.Label1.Text = "Reading No: "
         '
@@ -167,7 +169,7 @@ Partial Class frmOfficialReceiptItemDetails
         Me.Label2.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.Location = New System.Drawing.Point(52, 288)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(99, 16)
+        Me.Label2.Size = New System.Drawing.Size(98, 16)
         Me.Label2.TabIndex = 13
         Me.Label2.Text = "Billing Amount :"
         '
@@ -175,9 +177,9 @@ Partial Class frmOfficialReceiptItemDetails
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(391, 431)
+        Me.Label4.Location = New System.Drawing.Point(391, 459)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(91, 16)
+        Me.Label4.Size = New System.Drawing.Size(90, 16)
         Me.Label4.TabIndex = 15
         Me.Label4.Text = "Total Amount :"
         '
@@ -187,7 +189,7 @@ Partial Class frmOfficialReceiptItemDetails
         Me.Label5.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.Location = New System.Drawing.Point(52, 316)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(47, 16)
+        Me.Label5.Size = New System.Drawing.Size(46, 16)
         Me.Label5.TabIndex = 16
         Me.Label5.Text = "Parts :"
         '
@@ -197,7 +199,7 @@ Partial Class frmOfficialReceiptItemDetails
         Me.Label6.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.Location = New System.Drawing.Point(52, 372)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(87, 16)
+        Me.Label6.Size = New System.Drawing.Size(86, 16)
         Me.Label6.TabIndex = 17
         Me.Label6.Text = "Membership :"
         '
@@ -207,7 +209,7 @@ Partial Class frmOfficialReceiptItemDetails
         Me.Label7.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.Location = New System.Drawing.Point(52, 400)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(116, 16)
+        Me.Label7.Size = New System.Drawing.Size(115, 16)
         Me.Label7.TabIndex = 18
         Me.Label7.Text = "Subs. Receivable :"
         '
@@ -217,7 +219,7 @@ Partial Class frmOfficialReceiptItemDetails
         Me.Label8.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.Location = New System.Drawing.Point(391, 257)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(121, 16)
+        Me.Label8.Size = New System.Drawing.Size(120, 16)
         Me.Label8.TabIndex = 19
         Me.Label8.Text = "Reconnection Fee :"
         '
@@ -227,7 +229,7 @@ Partial Class frmOfficialReceiptItemDetails
         Me.Label9.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label9.Location = New System.Drawing.Point(391, 285)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(77, 16)
+        Me.Label9.Size = New System.Drawing.Size(76, 16)
         Me.Label9.TabIndex = 20
         Me.Label9.Text = "Calibration :"
         '
@@ -235,9 +237,9 @@ Partial Class frmOfficialReceiptItemDetails
         '
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(391, 313)
+        Me.Label10.Location = New System.Drawing.Point(391, 341)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(55, 16)
+        Me.Label10.Size = New System.Drawing.Size(54, 16)
         Me.Label10.TabIndex = 21
         Me.Label10.Text = "Others :"
         '
@@ -245,29 +247,29 @@ Partial Class frmOfficialReceiptItemDetails
         '
         Me.Label11.AutoSize = True
         Me.Label11.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.Location = New System.Drawing.Point(391, 344)
+        Me.Label11.Location = New System.Drawing.Point(391, 372)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(81, 16)
+        Me.Label11.Size = New System.Drawing.Size(80, 16)
         Me.Label11.TabIndex = 23
         Me.Label11.Text = "Description :"
         '
         'txtOtherDesc
         '
         Me.txtOtherDesc.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtOtherDesc.Location = New System.Drawing.Point(513, 341)
+        Me.txtOtherDesc.Location = New System.Drawing.Point(513, 369)
         Me.txtOtherDesc.Multiline = True
         Me.txtOtherDesc.Name = "txtOtherDesc"
         Me.txtOtherDesc.Size = New System.Drawing.Size(272, 25)
-        Me.txtOtherDesc.TabIndex = 11
+        Me.txtOtherDesc.TabIndex = 12
         '
         'chkPenalty
         '
         Me.chkPenalty.AutoSize = True
         Me.chkPenalty.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.chkPenalty.Location = New System.Drawing.Point(394, 402)
+        Me.chkPenalty.Location = New System.Drawing.Point(394, 430)
         Me.chkPenalty.Name = "chkPenalty"
-        Me.chkPenalty.Size = New System.Drawing.Size(109, 20)
-        Me.chkPenalty.TabIndex = 13
+        Me.chkPenalty.Size = New System.Drawing.Size(108, 20)
+        Me.chkPenalty.TabIndex = 14
         Me.chkPenalty.Text = "10% Penalty :"
         Me.chkPenalty.UseVisualStyleBackColor = True
         '
@@ -275,7 +277,7 @@ Partial Class frmOfficialReceiptItemDetails
         '
         Me.txtPenalty.BackColor = System.Drawing.Color.DarkGray
         Me.txtPenalty.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtPenalty.Location = New System.Drawing.Point(513, 400)
+        Me.txtPenalty.Location = New System.Drawing.Point(513, 428)
         Me.txtPenalty.Name = "txtPenalty"
         Me.txtPenalty.ReadOnly = True
         Me.txtPenalty.Size = New System.Drawing.Size(100, 22)
@@ -312,7 +314,7 @@ Partial Class frmOfficialReceiptItemDetails
         Me.Label12.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label12.Location = New System.Drawing.Point(52, 260)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(116, 16)
+        Me.Label12.Size = New System.Drawing.Size(115, 16)
         Me.Label12.TabIndex = 28
         Me.Label12.Text = "Mob. Reading No: "
         '
@@ -332,7 +334,7 @@ Partial Class frmOfficialReceiptItemDetails
         Me.Label3.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.Location = New System.Drawing.Point(391, 229)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(60, 16)
+        Me.Label3.Size = New System.Drawing.Size(59, 16)
         Me.Label3.TabIndex = 31
         Me.Label3.Text = "Tapping :"
         '
@@ -352,7 +354,7 @@ Partial Class frmOfficialReceiptItemDetails
         Me.Label13.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label13.Location = New System.Drawing.Point(52, 433)
         Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(120, 16)
+        Me.Label13.Size = New System.Drawing.Size(119, 16)
         Me.Label13.TabIndex = 33
         Me.Label13.Text = "Payment Remarks:"
         '
@@ -363,7 +365,7 @@ Partial Class frmOfficialReceiptItemDetails
         Me.txtRemarks.Multiline = True
         Me.txtRemarks.Name = "txtRemarks"
         Me.txtRemarks.Size = New System.Drawing.Size(194, 69)
-        Me.txtRemarks.TabIndex = 14
+        Me.txtRemarks.TabIndex = 15
         '
         'Label14
         '
@@ -371,7 +373,7 @@ Partial Class frmOfficialReceiptItemDetails
         Me.Label14.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label14.Location = New System.Drawing.Point(52, 344)
         Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(116, 16)
+        Me.Label14.Size = New System.Drawing.Size(115, 16)
         Me.Label14.TabIndex = 35
         Me.Label14.Text = "Maintenance Fee :"
         '
@@ -389,27 +391,49 @@ Partial Class frmOfficialReceiptItemDetails
         '
         Me.Label15.AutoSize = True
         Me.Label15.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label15.Location = New System.Drawing.Point(391, 375)
+        Me.Label15.Location = New System.Drawing.Point(391, 403)
         Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(108, 16)
+        Me.Label15.Size = New System.Drawing.Size(107, 16)
         Me.Label15.TabIndex = 37
         Me.Label15.Text = "Senior Discount :"
         '
         'txtSeniorDiscount
         '
         Me.txtSeniorDiscount.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtSeniorDiscount.Location = New System.Drawing.Point(513, 372)
+        Me.txtSeniorDiscount.Location = New System.Drawing.Point(513, 400)
         Me.txtSeniorDiscount.Name = "txtSeniorDiscount"
         Me.txtSeniorDiscount.Size = New System.Drawing.Size(100, 22)
-        Me.txtSeniorDiscount.TabIndex = 12
+        Me.txtSeniorDiscount.TabIndex = 13
         Me.txtSeniorDiscount.Text = "0.00"
         Me.txtSeniorDiscount.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        '
+        'Label16
+        '
+        Me.Label16.AutoSize = True
+        Me.Label16.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label16.Location = New System.Drawing.Point(391, 313)
+        Me.Label16.Name = "Label16"
+        Me.Label16.Size = New System.Drawing.Size(85, 16)
+        Me.Label16.TabIndex = 39
+        Me.Label16.Text = "Septage Fee:"
+        '
+        'txtSeptageFee
+        '
+        Me.txtSeptageFee.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtSeptageFee.Location = New System.Drawing.Point(513, 310)
+        Me.txtSeptageFee.Name = "txtSeptageFee"
+        Me.txtSeptageFee.Size = New System.Drawing.Size(100, 22)
+        Me.txtSeptageFee.TabIndex = 10
+        Me.txtSeptageFee.Text = "0.00"
+        Me.txtSeptageFee.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'frmOfficialReceiptItemDetails
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(803, 511)
+        Me.Controls.Add(Me.Label16)
+        Me.Controls.Add(Me.txtSeptageFee)
         Me.Controls.Add(Me.Label15)
         Me.Controls.Add(Me.txtSeniorDiscount)
         Me.Controls.Add(Me.Label14)
@@ -480,6 +504,8 @@ Partial Class frmOfficialReceiptItemDetails
         Me.Controls.SetChildIndex(Me.Label14, 0)
         Me.Controls.SetChildIndex(Me.txtSeniorDiscount, 0)
         Me.Controls.SetChildIndex(Me.Label15, 0)
+        Me.Controls.SetChildIndex(Me.txtSeptageFee, 0)
+        Me.Controls.SetChildIndex(Me.Label16, 0)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -518,4 +544,6 @@ Partial Class frmOfficialReceiptItemDetails
     Friend WithEvents txtMaintenance As System.Windows.Forms.TextBox
     Friend WithEvents Label15 As System.Windows.Forms.Label
     Friend WithEvents txtSeniorDiscount As System.Windows.Forms.TextBox
+    Friend WithEvents Label16 As Label
+    Friend WithEvents txtSeptageFee As TextBox
 End Class

@@ -13,6 +13,7 @@ Public Class frmMain
 
         Dim dtCRate As DataTable = LoadDataTable("SELECT * FROM WTRR")
         Dim dtCOMR As DataTable = LoadDataTable("SELECT * FROM COMR")
+        Dim dtSeptage As DataTable = LoadDataTable("SELECT * FROM SEPT")
 
         With dtCRate.Rows(0)
             CRate(0) = .Item("LessEqual_5")
@@ -33,6 +34,29 @@ Public Class frmMain
             ComRate(3) = .Item("GreaterEqual501")
         End With
 
+        With dtSeptage.Rows(0)
+            SeptageRate(0) = .Item("minimum_0_10")
+            SeptageRate(1) = .Item("m3_11")
+            SeptageRate(2) = .Item("m3_12")
+            SeptageRate(3) = .Item("m3_13")
+            SeptageRate(4) = .Item("m3_14")
+            SeptageRate(5) = .Item("m3_15")
+            SeptageRate(6) = .Item("m3_16")
+            SeptageRate(7) = .Item("m3_17")
+            SeptageRate(8) = .Item("m3_18")
+            SeptageRate(9) = .Item("m3_19")
+            SeptageRate(10) = .Item("m3_20")
+            SeptageRate(11) = .Item("m3_21")
+            SeptageRate(12) = .Item("m3_22")
+            SeptageRate(13) = .Item("m3_23")
+            SeptageRate(14) = .Item("m3_24")
+            SeptageRate(15) = .Item("m3_25")
+            SeptageRate(16) = .Item("m3_26")
+            SeptageRate(17) = .Item("m3_27")
+            SeptageRate(18) = .Item("m3_28")
+            SeptageRate(19) = .Item("m3_29")
+            SeptageRate(20) = .Item("maximum_30")
+        End With
 
         dtCRate.Dispose()
 
@@ -366,5 +390,9 @@ Public Class frmMain
             End If
             objFrm.ShowDialog()
         End Using
+    End Sub
+
+    Private Sub SeptageRateToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SeptageRateToolStripMenuItem.Click
+        frmSeptageRate.ShowDialog()
     End Sub
 End Class

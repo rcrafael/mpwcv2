@@ -204,7 +204,6 @@ D:\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmVoucherDetails.resources
 D:\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmVoucherItemDetails.resources
 D:\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmWithdrawShares.resources
 D:\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.vbproj.CoreCompileInputs.cache
-D:\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.vbproj.CopyComplete
 D:\Rafael files\MPWC V2\MPWCV2_Compliled\MPWCV2.exe.config
 D:\Rafael files\MPWC V2\MPWCV2_Compliled\MPWCV2.exe
 D:\Rafael files\MPWC V2\MPWCV2_Compliled\MPWCV2.pdb
@@ -268,3 +267,5 @@ D:\Rafael files\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.vbproj.Up2Date
 D:\Rafael files\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.exe
 D:\Rafael files\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.xml
 D:\Rafael files\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.pdb
+D:\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.frmSeptageRate.resources
+D:\MPWC V2\MPWCV2\MPWCV2\obj\Debug\MPWCV2.vbproj.Up2Date
