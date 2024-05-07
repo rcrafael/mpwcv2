@@ -291,7 +291,7 @@ Public Class frmOfficialReceiptDetails
             WithdrawShares(txtORNo.Text.Trim)
         End If
 
-        sql = "INSERT INTO ORRD (ORNo,ReadingNo,mobiRdngID,ReadingAmountPaid,Parts,Membership,Tapping,Calibration,Reconnection,SubReceivable,Penalty,OtherCollection,OtherDesc,TotalAmount,Remarks,MaintenanceFee,SeniorDiscount) VALUES (@ORNo,@ReadingNo,@mobiRdngID,@ReadingAmountPaid,@Parts,@Membership,@Tapping,@Calibration,@Reconnection,@SubReceivable,@Penalty,@OtherCollection,@OtherDesc,@TotalAmount,@Remarks,@MaintenanceFee,@SeniorDiscount)"
+        sql = "INSERT INTO ORRD (ORNo,ReadingNo,mobiRdngID,ReadingAmountPaid,Parts,Membership,Tapping,Calibration,Reconnection,SubReceivable,Penalty,OtherCollection,OtherDesc,TotalAmount,Remarks,MaintenanceFee,SeniorDiscount,SeptageFee) VALUES (@ORNo,@ReadingNo,@mobiRdngID,@ReadingAmountPaid,@Parts,@Membership,@Tapping,@Calibration,@Reconnection,@SubReceivable,@Penalty,@OtherCollection,@OtherDesc,@TotalAmount,@Remarks,@MaintenanceFee,@SeniorDiscount,@SeptageFee)"
 
         If dtDetails IsNot Nothing Then
             For Each drow As DataRow In dtDetails.Rows
@@ -315,6 +315,7 @@ Public Class frmOfficialReceiptDetails
                 cmd.Parameters.AddWithValue("@TotalAmount", drow("TotalAmount"))
                 cmd.Parameters.AddWithValue("@Remarks", drow("Remarks"))
                 cmd.Parameters.AddWithValue("@SeniorDiscount", drow("SeniorDiscount"))
+                cmd.Parameters.AddWithValue("@SeptageFee", drow("SeptageFee"))
                 cmd.ExecuteNonQuery()
 
                 If drow("ReadingNo").ToString <> "" Then
@@ -353,6 +354,7 @@ Public Class frmOfficialReceiptDetails
         cmd.Parameters.AddWithValue("@Status", TransactionStatus.Complete)
         cmd.Parameters.AddWithValue("@isPartSale", 0)
         cmd.Parameters.AddWithValue("@isOutsideCollection", 0)
+
         'cmd.Parameters.AddWithValue("@SeniorDiscount", CDec(txtSrDiscount.Text.Trim))
         cmd.ExecuteNonQuery()
 
@@ -369,7 +371,7 @@ Public Class frmOfficialReceiptDetails
 
 
         ExecuteSQLQuery(String.Format("DELETE FROM ORRD WHERE ORNo = {0}", txtORNo.Text.Trim))
-        sql = "INSERT INTO ORRD (ORNo,ReadingNo,mobiRdngID,ReadingAmountPaid,Parts,Membership,Tapping,Calibration,Reconnection,SubReceivable,Penalty,OtherCollection,OtherDesc,TotalAmount,Remarks,MaintenanceFee,SeniorDiscount) VALUES (@ORNo,@ReadingNo,@mobiRdngID,@ReadingAmountPaid,@Parts,@Membership,@Tapping,@Calibration,@Reconnection,@SubReceivable,@Penalty,@OtherCollection,@OtherDesc,@TotalAmount,@Remarks,@MaintenanceFee,@SeniorDiscount)"
+        sql = "INSERT INTO ORRD (ORNo,ReadingNo,mobiRdngID,ReadingAmountPaid,Parts,Membership,Tapping,Calibration,Reconnection,SubReceivable,Penalty,OtherCollection,OtherDesc,TotalAmount,Remarks,MaintenanceFee,SeniorDiscount,SeptageFee) VALUES (@ORNo,@ReadingNo,@mobiRdngID,@ReadingAmountPaid,@Parts,@Membership,@Tapping,@Calibration,@Reconnection,@SubReceivable,@Penalty,@OtherCollection,@OtherDesc,@TotalAmount,@Remarks,@MaintenanceFee,@SeniorDiscount,@SeptageFee)"
 
         If dtDetails IsNot Nothing Then
             For Each drow As DataRow In dtDetails.Rows
@@ -393,6 +395,7 @@ Public Class frmOfficialReceiptDetails
                 cmd.Parameters.AddWithValue("@TotalAmount", drow("TotalAmount"))
                 cmd.Parameters.AddWithValue("@Remarks", drow("Remarks"))
                 cmd.Parameters.AddWithValue("@SeniorDiscount", drow("SeniorDiscount"))
+                cmd.Parameters.AddWithValue("@SeptageFee", drow("SeptageFee"))
 
                 cmd.ExecuteNonQuery()
                 If drow("ReadingNo").ToString <> "" Then
@@ -420,6 +423,7 @@ Public Class frmOfficialReceiptDetails
             .Add(CreateAmountColumn("ReadingAmountPaid", "Reading Amount Paid", "ReadingAmountPaid", 2, False, True, 120))
             .Add(CreateAmountColumn("Parts", "Parts", "Parts", 2, False, True, 120))
             .Add(CreateAmountColumn("MaintenanceFee", "Maintenance Fee", "MaintenanceFee", 2, False, True, 120))
+            .Add(CreateAmountColumn("SeptageFee", "Septage Fee", "SeptageFee", 2, False, True, 120))
             .Add(CreateAmountColumn("Membership", "Membership Fee", "Membership", 2, False, True, 120))
             .Add(CreateAmountColumn("Tapping", "Tapping", "Tapping", 2, False, True, 120))
             .Add(CreateAmountColumn("Calibration", "Calibration", "Calibration", 2, False, True, 120))

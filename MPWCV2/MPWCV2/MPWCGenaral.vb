@@ -6,6 +6,7 @@ Public Class MPWCGenaral
 
     Public Shared CRate(8) As Decimal
     Public Shared ComRate(3) As Decimal
+    Public Shared SeptageRate(21) As Decimal
 
 #Region "Enum/Struct"
     Public Enum TransactionStatus

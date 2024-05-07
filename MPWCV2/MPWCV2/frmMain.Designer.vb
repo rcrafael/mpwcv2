@@ -63,8 +63,9 @@ Partial Class frmMain
         Me.VoucherReportToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.UtilityToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ExportBillingForAndroidToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ImportBillingFromAndroidToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SeptageRateToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -80,7 +81,7 @@ Partial Class frmMain
         '
         'MaintenanceToolStripMenuItem
         '
-        Me.MaintenanceToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.UsersToolStripMenuItem, Me.UserAccessToolStripMenuItem, Me.WaterRateToolStripMenuItem, Me.CustomersToolStripMenuItem, Me.MembersToolStripMenuItem, Me.CustomerIDRegistryIDConnectionToolStripMenuItem, Me.ItemsMasterlistToolStripMenuItem, Me.ParticularsMasterlistToolStripMenuItem})
+        Me.MaintenanceToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.UsersToolStripMenuItem, Me.UserAccessToolStripMenuItem, Me.WaterRateToolStripMenuItem, Me.CustomersToolStripMenuItem, Me.MembersToolStripMenuItem, Me.CustomerIDRegistryIDConnectionToolStripMenuItem, Me.ItemsMasterlistToolStripMenuItem, Me.ParticularsMasterlistToolStripMenuItem, Me.SeptageRateToolStripMenuItem})
         Me.MaintenanceToolStripMenuItem.Name = "MaintenanceToolStripMenuItem"
         Me.MaintenanceToolStripMenuItem.Size = New System.Drawing.Size(110, 24)
         Me.MaintenanceToolStripMenuItem.Text = "Maintenance"
@@ -307,8 +308,14 @@ Partial Class frmMain
         'ExportBillingForAndroidToolStripMenuItem
         '
         Me.ExportBillingForAndroidToolStripMenuItem.Name = "ExportBillingForAndroidToolStripMenuItem"
-        Me.ExportBillingForAndroidToolStripMenuItem.Size = New System.Drawing.Size(254, 24)
+        Me.ExportBillingForAndroidToolStripMenuItem.Size = New System.Drawing.Size(271, 24)
         Me.ExportBillingForAndroidToolStripMenuItem.Text = "Export Billing for Android"
+        '
+        'ImportBillingFromAndroidToolStripMenuItem
+        '
+        Me.ImportBillingFromAndroidToolStripMenuItem.Name = "ImportBillingFromAndroidToolStripMenuItem"
+        Me.ImportBillingFromAndroidToolStripMenuItem.Size = New System.Drawing.Size(271, 24)
+        Me.ImportBillingFromAndroidToolStripMenuItem.Text = "Import Billing From Android"
         '
         'ExitToolStripMenuItem
         '
@@ -316,11 +323,11 @@ Partial Class frmMain
         Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(46, 24)
         Me.ExitToolStripMenuItem.Text = "Exit"
         '
-        'ImportBillingFromAndroidToolStripMenuItem
+        'SeptageRateToolStripMenuItem
         '
-        Me.ImportBillingFromAndroidToolStripMenuItem.Name = "ImportBillingFromAndroidToolStripMenuItem"
-        Me.ImportBillingFromAndroidToolStripMenuItem.Size = New System.Drawing.Size(271, 24)
-        Me.ImportBillingFromAndroidToolStripMenuItem.Text = "Import Billing From Android"
+        Me.SeptageRateToolStripMenuItem.Name = "SeptageRateToolStripMenuItem"
+        Me.SeptageRateToolStripMenuItem.Size = New System.Drawing.Size(333, 24)
+        Me.SeptageRateToolStripMenuItem.Text = "Septage Rate"
         '
         'frmMain
         '
@@ -381,5 +388,5 @@ Partial Class frmMain
     Friend WithEvents ResidentialToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents CommercialToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ImportBillingFromAndroidToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-
+    Friend WithEvents SeptageRateToolStripMenuItem As ToolStripMenuItem
 End Class
