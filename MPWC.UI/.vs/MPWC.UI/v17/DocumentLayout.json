@@ -7,33 +7,6 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{8F0CC422-EF35-47B4-8B34-B1047681BBBE}|..\\MPWCV2\\MPWCV2\\MPWCV2.vbproj|d:\\mpwc v2\\mpwcv2\\mpwcv2\\collection\\officialreceipt\\frmofficialreceiptgrid.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8F0CC422-EF35-47B4-8B34-B1047681BBBE}|..\\MPWCV2\\MPWCV2\\MPWCV2.vbproj|d:\\mpwc v2\\mpwcv2\\mpwcv2\\collection\\officialreceipt\\frmofficialreceiptgrid.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8F0CC422-EF35-47B4-8B34-B1047681BBBE}|..\\MPWCV2\\MPWCV2\\MPWCV2.vbproj|d:\\mpwc v2\\mpwcv2\\mpwcv2\\collection\\officialreceipt\\frmofficialreceiptdetails.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8F0CC422-EF35-47B4-8B34-B1047681BBBE}|..\\MPWCV2\\MPWCV2\\MPWCV2.vbproj|d:\\mpwc v2\\mpwcv2\\mpwcv2\\collection\\officialreceipt\\frmofficialreceiptdetails.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8F0CC422-EF35-47B4-8B34-B1047681BBBE}|..\\MPWCV2\\MPWCV2\\MPWCV2.vbproj|d:\\mpwc v2\\mpwcv2\\mpwcv2\\frmmain.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8F0CC422-EF35-47B4-8B34-B1047681BBBE}|..\\MPWCV2\\MPWCV2\\MPWCV2.vbproj|d:\\mpwc v2\\mpwcv2\\mpwcv2\\frmmain.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8F0CC422-EF35-47B4-8B34-B1047681BBBE}|..\\MPWCV2\\MPWCV2\\MPWCV2.vbproj|d:\\mpwc v2\\mpwcv2\\mpwcv2\\billing\\reading\\frmmeterreadingdetails.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8F0CC422-EF35-47B4-8B34-B1047681BBBE}|..\\MPWCV2\\MPWCV2\\MPWCV2.vbproj|d:\\mpwc v2\\mpwcv2\\mpwcv2\\billing\\reading\\frmmeterreadingdetails.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8F0CC422-EF35-47B4-8B34-B1047681BBBE}|..\\MPWCV2\\MPWCV2\\MPWCV2.vbproj|d:\\mpwc v2\\mpwcv2\\mpwcv2\\billing\\reading\\frmmeterreadinggrid.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8F0CC422-EF35-47B4-8B34-B1047681BBBE}|..\\MPWCV2\\MPWCV2\\MPWCV2.vbproj|d:\\mpwc v2\\mpwcv2\\mpwcv2\\billing\\reading\\frmmeterreadinggrid.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -43,8 +16,12 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -53,34 +30,10 @@
               "RelativeDocumentMoniker": "..\\MPWCV2\\MPWCV2\\Reports\\OfficialReceipt Report\\ORReceipt.vb",
               "ToolTip": "D:\\MPWC V2\\MPWCV2\\MPWCV2\\Reports\\OfficialReceipt Report\\ORReceipt.vb",
               "RelativeToolTip": "..\\MPWCV2\\MPWCV2\\Reports\\OfficialReceipt Report\\ORReceipt.vb",
-              "ViewState": "AQIAADoAAAAAAAAAAAAAwEoAAAAqAAAA",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAqwBoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2024-05-07T08:04:33.755Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "frmOfficialReceiptDetails.vb",
-              "DocumentMoniker": "D:\\MPWC V2\\MPWCV2\\MPWCV2\\Collection\\OfficialReceipt\\frmOfficialReceiptDetails.vb",
-              "RelativeDocumentMoniker": "..\\MPWCV2\\MPWCV2\\Collection\\OfficialReceipt\\frmOfficialReceiptDetails.vb",
-              "ToolTip": "D:\\MPWC V2\\MPWCV2\\MPWCV2\\Collection\\OfficialReceipt\\frmOfficialReceiptDetails.vb",
-              "RelativeToolTip": "..\\MPWCV2\\MPWCV2\\Collection\\OfficialReceipt\\frmOfficialReceiptDetails.vb",
-              "ViewState": "AQIAAH8BAAAAAAAAAAAiwIkBAABMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-05-06T15:39:26.756Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "frmOfficialReceiptDetails.vb [Design]",
-              "DocumentMoniker": "D:\\MPWC V2\\MPWCV2\\MPWCV2\\Collection\\OfficialReceipt\\frmOfficialReceiptDetails.vb",
-              "RelativeDocumentMoniker": "..\\MPWCV2\\MPWCV2\\Collection\\OfficialReceipt\\frmOfficialReceiptDetails.vb",
-              "ToolTip": "D:\\MPWC V2\\MPWCV2\\MPWCV2\\Collection\\OfficialReceipt\\frmOfficialReceiptDetails.vb [Design]",
-              "RelativeToolTip": "..\\MPWCV2\\MPWCV2\\Collection\\OfficialReceipt\\frmOfficialReceiptDetails.vb [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-05-06T15:39:21.772Z"
             },
             {
               "$type": "Document",
@@ -90,91 +43,10 @@
               "RelativeDocumentMoniker": "..\\MPWCV2\\MPWCV2\\Collection\\OfficialReceipt\\frmOfficialReceiptGrid.vb",
               "ToolTip": "D:\\MPWC V2\\MPWCV2\\MPWCV2\\Collection\\OfficialReceipt\\frmOfficialReceiptGrid.vb",
               "RelativeToolTip": "..\\MPWCV2\\MPWCV2\\Collection\\OfficialReceipt\\frmOfficialReceiptGrid.vb",
-              "ViewState": "AQIAAL4AAAAAAAAAAAAuwNIAAAAkAAAA",
+              "ViewState": "AQIAAIAAAAAAAAAAAAA9wMgAAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2024-05-06T15:14:41.304Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "frmOfficialReceiptGrid.vb [Design]",
-              "DocumentMoniker": "D:\\MPWC V2\\MPWCV2\\MPWCV2\\Collection\\OfficialReceipt\\frmOfficialReceiptGrid.vb",
-              "RelativeDocumentMoniker": "..\\MPWCV2\\MPWCV2\\Collection\\OfficialReceipt\\frmOfficialReceiptGrid.vb",
-              "ToolTip": "D:\\MPWC V2\\MPWCV2\\MPWCV2\\Collection\\OfficialReceipt\\frmOfficialReceiptGrid.vb [Design]",
-              "RelativeToolTip": "..\\MPWCV2\\MPWCV2\\Collection\\OfficialReceipt\\frmOfficialReceiptGrid.vb [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-05-06T15:14:39.764Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "frmMain.vb",
-              "DocumentMoniker": "D:\\MPWC V2\\MPWCV2\\MPWCV2\\frmMain.vb",
-              "RelativeDocumentMoniker": "..\\MPWCV2\\MPWCV2\\frmMain.vb",
-              "ToolTip": "D:\\MPWC V2\\MPWCV2\\MPWCV2\\frmMain.vb",
-              "RelativeToolTip": "..\\MPWCV2\\MPWCV2\\frmMain.vb",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAA0AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-05-06T14:46:24.273Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "frmMain.vb [Design]",
-              "DocumentMoniker": "D:\\MPWC V2\\MPWCV2\\MPWCV2\\frmMain.vb",
-              "RelativeDocumentMoniker": "..\\MPWCV2\\MPWCV2\\frmMain.vb",
-              "ToolTip": "D:\\MPWC V2\\MPWCV2\\MPWCV2\\frmMain.vb [Design]",
-              "RelativeToolTip": "..\\MPWCV2\\MPWCV2\\frmMain.vb [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-05-06T14:46:22.526Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "frmMeterReadingDetails.vb",
-              "DocumentMoniker": "D:\\MPWC V2\\MPWCV2\\MPWCV2\\Billing\\Reading\\frmMeterReadingDetails.vb",
-              "RelativeDocumentMoniker": "..\\MPWCV2\\MPWCV2\\Billing\\Reading\\frmMeterReadingDetails.vb",
-              "ToolTip": "D:\\MPWC V2\\MPWCV2\\MPWCV2\\Billing\\Reading\\frmMeterReadingDetails.vb",
-              "RelativeToolTip": "..\\MPWCV2\\MPWCV2\\Billing\\Reading\\frmMeterReadingDetails.vb",
-              "ViewState": "AQIAALQAAAAAAAAAAAAawNUAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-05-06T14:15:51.432Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "frmMeterReadingDetails.vb [Design]",
-              "DocumentMoniker": "D:\\MPWC V2\\MPWCV2\\MPWCV2\\Billing\\Reading\\frmMeterReadingDetails.vb",
-              "RelativeDocumentMoniker": "..\\MPWCV2\\MPWCV2\\Billing\\Reading\\frmMeterReadingDetails.vb",
-              "ToolTip": "D:\\MPWC V2\\MPWCV2\\MPWCV2\\Billing\\Reading\\frmMeterReadingDetails.vb [Design]",
-              "RelativeToolTip": "..\\MPWCV2\\MPWCV2\\Billing\\Reading\\frmMeterReadingDetails.vb [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-05-06T14:16:11.595Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "frmMeterReadingGrid.vb",
-              "DocumentMoniker": "D:\\MPWC V2\\MPWCV2\\MPWCV2\\Billing\\Reading\\frmMeterReadingGrid.vb",
-              "RelativeDocumentMoniker": "..\\MPWCV2\\MPWCV2\\Billing\\Reading\\frmMeterReadingGrid.vb",
-              "ToolTip": "D:\\MPWC V2\\MPWCV2\\MPWCV2\\Billing\\Reading\\frmMeterReadingGrid.vb",
-              "RelativeToolTip": "..\\MPWCV2\\MPWCV2\\Billing\\Reading\\frmMeterReadingGrid.vb",
-              "ViewState": "AQIAABMAAAAAAAAAAAAgwCcAAAALAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-05-06T14:07:39.427Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "frmMeterReadingGrid.vb [Design]",
-              "DocumentMoniker": "D:\\MPWC V2\\MPWCV2\\MPWCV2\\Billing\\Reading\\frmMeterReadingGrid.vb",
-              "RelativeDocumentMoniker": "..\\MPWCV2\\MPWCV2\\Billing\\Reading\\frmMeterReadingGrid.vb",
-              "ToolTip": "D:\\MPWC V2\\MPWCV2\\MPWCV2\\Billing\\Reading\\frmMeterReadingGrid.vb [Design]",
-              "RelativeToolTip": "..\\MPWCV2\\MPWCV2\\Billing\\Reading\\frmMeterReadingGrid.vb [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-05-06T14:07:35.522Z"
             }
           ]
         }
