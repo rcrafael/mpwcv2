@@ -117,7 +117,7 @@ Public Class frmMeterReadingDetails
         txtAmount.Text = formatAmount(0)
         'txtRemainingBal.Text = formatAmount(0)
         txtParts.Text = formatAmount(0)
-        txtMaintenance.Text = formatAmount(5)
+        txtMaintenance.Text = formatAmount(10)
         txtSeptageFee.Text = formatAmount(0)
         txtLess.Text = formatAmount(0)
         txtTotalAmount.Text = formatAmount(0)

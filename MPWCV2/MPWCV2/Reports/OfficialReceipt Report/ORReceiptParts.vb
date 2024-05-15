@@ -46,6 +46,7 @@ Public Class ORReceiptParts
             .Cells("A5").Value = dtb.Rows(0).Item("Address").ToString
             .Cells("E9").Value = dtbDetails.Rows(0).Item("WaterService")
             .Cells("E9:F9").Style.Numberformat.Format = CustomFormat.AMOUNTFORMAT
+            .Cells("B10").Value = ""
             .Cells("E11").Value = dtbDetails.Rows(0).Item("Penalty")
             .Cells("E11:F11").Style.Numberformat.Format = CustomFormat.AMOUNTFORMAT
             .Cells("E12").Value = dtbDetails.Rows(0).Item("Parts")
@@ -64,22 +65,24 @@ Public Class ORReceiptParts
             .Cells("E18").Style.Numberformat.Format = CustomFormat.AMOUNTFORMAT
             .Cells("E19").Value = dtbDetails.Rows(0).Item("SubReceivable")
             .Cells("E19").Style.Numberformat.Format = CustomFormat.AMOUNTFORMAT
-            .Cells("E20").Value = dtbDetails.Rows(0).Item("Others")
+            .Cells("E20").Value = 0
             .Cells("E20").Style.Numberformat.Format = CustomFormat.AMOUNTFORMAT
+            .Cells("E21").Value = dtbDetails.Rows(0).Item("Others")
+            .Cells("E21").Style.Numberformat.Format = CustomFormat.AMOUNTFORMAT
 
-            .Cells("E22").Formula = "=SUM(E9,E11,E12,E13,E14,E15,E16,E17,E18,E19,E20)"
-            .Cells("E22").Style.Numberformat.Format = CustomFormat.AMOUNTFORMAT
+            .Cells("E23").Formula = "=SUM(E9,E11,E12,E13,E14,E15,E16,E17,E18,E19,E20,E21)"
+            .Cells("E23").Style.Numberformat.Format = CustomFormat.AMOUNTFORMAT
 
-            .Cells("E24").Value = 0
             .Cells("E25").Value = 0
-            .Cells("E26").Value = dtbDetails.Rows(0).Item("LessOthers")
-            .Cells("E24").Style.Numberformat.Format = CustomFormat.AMOUNTFORMAT
+            .Cells("E26").Value = 0
+            .Cells("E27").Value = dtbDetails.Rows(0).Item("LessOthers")
             .Cells("E25").Style.Numberformat.Format = CustomFormat.AMOUNTFORMAT
             .Cells("E26").Style.Numberformat.Format = CustomFormat.AMOUNTFORMAT
+            .Cells("E27").Style.Numberformat.Format = CustomFormat.AMOUNTFORMAT
 
 
-            .Cells("E28").Formula = "=(E22 - SUM(E24,E25,E26))"
-            .Cells("E28").Style.Numberformat.Format = CustomFormat.AMOUNTFORMAT
+            .Cells("E29").Formula = "=(E23 - SUM(E25,E26,E27))"
+            .Cells("E29").Style.Numberformat.Format = CustomFormat.AMOUNTFORMAT
 
             '.Cells("B10").Value = getMonths(dtb.Rows(0).Item("ORNo").ToString)
 
