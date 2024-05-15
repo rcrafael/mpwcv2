@@ -69,7 +69,6 @@ D:\MPWC V2\MPWCV2_Compliled\MPWC.UI.pdb
 D:\MPWC V2\MPWCV2_Compliled\MPWC.UI.xml
 D:\MPWC V2\MPWC.UI\MPWC.UI\obj\Debug\MPWC.UI.vbproj.AssemblyReference.cache
 D:\MPWC V2\MPWC.UI\MPWC.UI\obj\Debug\MPWC.UI.vbproj.CoreCompileInputs.cache
-D:\MPWC V2\MPWC.UI\MPWC.UI\obj\Debug\MPWC.UI.vbproj.CopyComplete
 D:\Rafael files\MPWC V2\MPWCV2_Compliled\MPWC.UI.exe.config
 D:\Rafael files\MPWC V2\MPWCV2_Compliled\MPWC.UI.exe
 D:\Rafael files\MPWC V2\MPWCV2_Compliled\MPWC.UI.pdb
@@ -86,3 +85,4 @@ D:\Rafael files\MPWC V2\MPWC.UI\MPWC.UI\obj\Debug\MPWC.UI.vbproj.Up2Date
 D:\Rafael files\MPWC V2\MPWC.UI\MPWC.UI\obj\Debug\MPWC.UI.exe
 D:\Rafael files\MPWC V2\MPWC.UI\MPWC.UI\obj\Debug\MPWC.UI.xml
 D:\Rafael files\MPWC V2\MPWC.UI\MPWC.UI\obj\Debug\MPWC.UI.pdb
+D:\MPWC V2\MPWC.UI\MPWC.UI\obj\Debug\MPWC.UI.vbproj.Up2Date
