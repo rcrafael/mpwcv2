@@ -22,9 +22,9 @@ Public Class CBUCollectionReport
             strMemb = String.Format(" AND C.RegistryNo = {0}", pMemberID)
         End If
 
-        strQuery = String.Format("SELECT C.ORNo,O.ORDate,C.RegistryNo,(M.Lname + ', ' + M.Fname + ' ' + M.Mname) As MemberName,C.Amount FROM CBUC C " & _
-                                " LEFT JOIN ORRH O ON C.ORNo = O.ORNo LEFT JOIN MMBR M ON C.RegistryNo = M.RegistryNo " & _
-                                " WHERE C.TransType = 1 AND AND C.EntryDate BETWEEN '{0} 00:00:00' AND '{1} 23:59:59' {2} ", _dtFrom, _dtTo, strMemb)
+        strQuery = String.Format("SELECT C.ORNo,O.ORDate,C.RegistryNo,(M.Lname + ', ' + M.Fname + ' ' + M.Mname) As MemberName,C.Amount FROM CBUC C " &
+                                " LEFT JOIN ORRH O ON C.ORNo = O.ORNo LEFT JOIN MMBR M ON C.RegistryNo = M.RegistryNo " &
+                                " WHERE C.TransType = 1 AND C.EntryDate BETWEEN '{0} 00:00:00' AND '{1} 23:59:59' {2} ", _dtFrom, _dtTo, strMemb)
 
     End Sub
 
