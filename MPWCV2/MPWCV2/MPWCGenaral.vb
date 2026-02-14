@@ -4,8 +4,8 @@ Imports System.Data.SqlClient
 
 Public Class MPWCGenaral
 
-    Public Shared CRate(8) As Decimal
-    Public Shared ComRate(3) As Decimal
+    Public Shared CRate(9) As Decimal
+    Public Shared ComRate(5) As Decimal
     Public Shared SeptageRate(21) As Decimal
 
 #Region "Enum/Struct"

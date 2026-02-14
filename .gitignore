@@ -1,0 +1,8 @@
+*.vsidx
+MPWC.UI/.vs/MPWC.UI/v17/.suo
+MPWC.UI/.vs/MPWC.UI/v17/DocumentLayout.json
+*.cache
+/MPWC.UI/MPWC.UI/obj
+/MPWCV2/MPWCV2/obj
+/MPWC.Data/MPWC.Data/obj
+/MPWC.UI/.vs

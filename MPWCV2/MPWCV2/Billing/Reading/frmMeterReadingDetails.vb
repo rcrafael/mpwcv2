@@ -334,33 +334,54 @@ Public Class frmMeterReadingDetails
                     Dim newFinalAmount As Decimal = 0
                     Dim AmountInRate As Decimal = 0
 
+                    'If m3 <= 5 Then
+                    '    baseAmount = 165.0
+                    '    AmountInRate = 0
+                    'ElseIf m3 >= 6 And m3 <= 10 Then
+                    '    baseAmount = 165
+                    '    AmountInRate = getExcessM3(m3, 5) * CRate(1)
+                    'ElseIf m3 >= 11 And m3 <= 20 Then
+                    '    baseAmount = 295
+                    '    AmountInRate = getExcessM3(m3, 10) * CRate(2)
+                    'ElseIf m3 >= 21 And m3 <= 30 Then
+                    '    baseAmount = 566
+                    '    AmountInRate = getExcessM3(m3, 20) * CRate(3)
+                    'ElseIf m3 >= 31 And m3 <= 40 Then
+                    '    baseAmount = 858
+                    '    AmountInRate = getExcessM3(m3, 30) * CRate(4)
+                    'ElseIf m3 >= 41 And m3 <= 50 Then
+                    '    baseAmount = 1168
+                    '    AmountInRate = getExcessM3(m3, 40) * CRate(5)
+                    'ElseIf m3 >= 51 And m3 <= 70 Then
+                    '    baseAmount = 1496
+                    '    AmountInRate = getExcessM3(m3, 50) * CRate(6)
+                    'ElseIf m3 >= 71 And m3 <= 90 Then
+                    '    baseAmount = 2196
+                    '    AmountInRate = getExcessM3(m3, 70) * CRate(7)
+                    'ElseIf m3 >= 91 Then30
+                    '    baseAmount = 2944
+                    '    AmountInRate = getExcessM3(m3, 90) * CRate(8)
+                    'End If
+
+                    'change request  Jan 06, 2026
                     If m3 <= 5 Then
-                        baseAmount = 165.0
+                        baseAmount = 145
                         AmountInRate = 0
                     ElseIf m3 >= 6 And m3 <= 10 Then
-                        baseAmount = 165
+                        baseAmount = 145
                         AmountInRate = getExcessM3(m3, 5) * CRate(1)
                     ElseIf m3 >= 11 And m3 <= 20 Then
-                        baseAmount = 295
+                        baseAmount = 297.5
                         AmountInRate = getExcessM3(m3, 10) * CRate(2)
                     ElseIf m3 >= 21 And m3 <= 30 Then
-                        baseAmount = 566
+                        baseAmount = 636.5
                         AmountInRate = getExcessM3(m3, 20) * CRate(3)
                     ElseIf m3 >= 31 And m3 <= 40 Then
-                        baseAmount = 858
+                        baseAmount = 1004.5
                         AmountInRate = getExcessM3(m3, 30) * CRate(4)
-                    ElseIf m3 >= 41 And m3 <= 50 Then
-                        baseAmount = 1168
-                        AmountInRate = getExcessM3(m3, 40) * CRate(5)
-                    ElseIf m3 >= 51 And m3 <= 70 Then
-                        baseAmount = 1496
-                        AmountInRate = getExcessM3(m3, 50) * CRate(6)
-                    ElseIf m3 >= 71 And m3 <= 90 Then
-                        baseAmount = 2196
-                        AmountInRate = getExcessM3(m3, 70) * CRate(7)
-                    ElseIf m3 >= 91 Then
-                        baseAmount = 2944
-                        AmountInRate = getExcessM3(m3, 90) * CRate(8)
+                    ElseIf m3 >= 41 Then
+                        baseAmount = 1424.5
+                        AmountInRate = getExcessM3(m3, 40) * CRate(9)
                     End If
 
 
@@ -377,18 +398,37 @@ Public Class frmMeterReadingDetails
                     Dim amountInRate As Decimal = 0
                     Dim finalAmount As Decimal = 0
 
+                    'If m3 >= 0 And m3 <= 15 Then
+                    '    baseAmount = ComRate(0)
+                    '    amountInRate = 0
+                    'ElseIf m3 >= 16 And m3 <= 30 Then
+                    '    baseAmount = 637.5
+                    '    amountInRate = getExcessM3(m3, 15) * ComRate(1)
+                    'ElseIf m3 >= 31 And m3 <= 500 Then
+                    '    baseAmount = 1392
+                    '    amountInRate = getExcessM3(m3, 30) * ComRate(2)
+                    'ElseIf m3 >= 501 Then
+                    '    baseAmount = 27336
+                    '    amountInRate = getExcessM3(m3, 500) * ComRate(3)
+                    'End If
+
+
+                    'change request  Jan 06, 2026
                     If m3 >= 0 And m3 <= 15 Then
                         baseAmount = ComRate(0)
                         amountInRate = 0
                     ElseIf m3 >= 16 And m3 <= 30 Then
-                        baseAmount = 637.5
+                        baseAmount = 913.5
                         amountInRate = getExcessM3(m3, 15) * ComRate(1)
                     ElseIf m3 >= 31 And m3 <= 500 Then
-                        baseAmount = 1392
+                        baseAmount = 1870.5
                         amountInRate = getExcessM3(m3, 30) * ComRate(2)
-                    ElseIf m3 >= 501 Then
-                        baseAmount = 27336
-                        amountInRate = getExcessM3(m3, 500) * ComRate(3)
+                    ElseIf m3 >= 501 And m3 <= 1000 Then
+                        baseAmount = 33219.5
+                        amountInRate = getExcessM3(m3, 500) * ComRate(4)
+                    ElseIf m3 >= 1001 Then
+                        baseAmount = 68019.5
+                        amountInRate = getExcessM3(m3, 1000) * ComRate(5)
                     End If
 
                     finalAmount = baseAmount + amountInRate

@@ -30,7 +30,9 @@ Partial Class frmCommercialRate
         Me.Label3 = New System.Windows.Forms.Label()
         Me.btnSave = New System.Windows.Forms.Button()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.txtOver501 = New System.Windows.Forms.TextBox()
+        Me.txtLessEqual1000 = New System.Windows.Forms.TextBox()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.txtOver1000 = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'txtLessEqual15
@@ -69,7 +71,7 @@ Partial Class frmCommercialRate
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(19, 28)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(93, 16)
+        Me.Label1.Size = New System.Drawing.Size(92, 16)
         Me.Label1.TabIndex = 5
         Me.Label1.Text = "0 - 15 cu.m. :"
         '
@@ -79,7 +81,7 @@ Partial Class frmCommercialRate
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.Location = New System.Drawing.Point(19, 56)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(101, 16)
+        Me.Label2.Size = New System.Drawing.Size(100, 16)
         Me.Label2.TabIndex = 6
         Me.Label2.Text = "16 - 30 cu.m. :"
         '
@@ -89,7 +91,7 @@ Partial Class frmCommercialRate
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.Location = New System.Drawing.Point(19, 84)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(109, 16)
+        Me.Label3.Size = New System.Drawing.Size(108, 16)
         Me.Label3.TabIndex = 7
         Me.Label3.Text = "31 - 500 cu.m. :"
         '
@@ -99,7 +101,7 @@ Partial Class frmCommercialRate
         Me.btnSave.Location = New System.Drawing.Point(319, 25)
         Me.btnSave.Name = "btnSave"
         Me.btnSave.Size = New System.Drawing.Size(91, 34)
-        Me.btnSave.TabIndex = 4
+        Me.btnSave.TabIndex = 5
         Me.btnSave.Text = "Save"
         Me.btnSave.UseVisualStyleBackColor = True
         '
@@ -109,27 +111,49 @@ Partial Class frmCommercialRate
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.Location = New System.Drawing.Point(19, 112)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(117, 16)
+        Me.Label4.Size = New System.Drawing.Size(124, 16)
         Me.Label4.TabIndex = 8
-        Me.Label4.Text = "Over 501 cu.m. :"
+        Me.Label4.Text = "501 - 1000 cu.m. :"
         '
-        'txtOver501
+        'txtLessEqual1000
         '
-        Me.txtOver501.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtOver501.Location = New System.Drawing.Point(183, 109)
-        Me.txtOver501.Name = "txtOver501"
-        Me.txtOver501.Size = New System.Drawing.Size(100, 22)
-        Me.txtOver501.TabIndex = 3
-        Me.txtOver501.Text = "0.00"
-        Me.txtOver501.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        Me.txtLessEqual1000.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtLessEqual1000.Location = New System.Drawing.Point(183, 109)
+        Me.txtLessEqual1000.Name = "txtLessEqual1000"
+        Me.txtLessEqual1000.Size = New System.Drawing.Size(100, 22)
+        Me.txtLessEqual1000.TabIndex = 3
+        Me.txtLessEqual1000.Text = "0.00"
+        Me.txtLessEqual1000.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(19, 140)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(124, 16)
+        Me.Label5.TabIndex = 10
+        Me.Label5.Text = "Over 1000 cu.m. :"
+        '
+        'txtOver1000
+        '
+        Me.txtOver1000.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtOver1000.Location = New System.Drawing.Point(183, 137)
+        Me.txtOver1000.Name = "txtOver1000"
+        Me.txtOver1000.Size = New System.Drawing.Size(100, 22)
+        Me.txtOver1000.TabIndex = 4
+        Me.txtOver1000.Text = "0.00"
+        Me.txtOver1000.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'frmCommercialRate
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(438, 157)
+        Me.ClientSize = New System.Drawing.Size(438, 198)
+        Me.Controls.Add(Me.Label5)
+        Me.Controls.Add(Me.txtOver1000)
         Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.txtOver501)
+        Me.Controls.Add(Me.txtLessEqual1000)
         Me.Controls.Add(Me.btnSave)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
@@ -153,5 +177,7 @@ Partial Class frmCommercialRate
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents btnSave As System.Windows.Forms.Button
     Friend WithEvents Label4 As Label
-    Friend WithEvents txtOver501 As TextBox
+    Friend WithEvents txtLessEqual1000 As TextBox
+    Friend WithEvents Label5 As Label
+    Friend WithEvents txtOver1000 As TextBox
 End Class

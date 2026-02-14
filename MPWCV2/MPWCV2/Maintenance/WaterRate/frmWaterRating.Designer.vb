@@ -30,7 +30,7 @@ Partial Class frmWaterRating
         Me.Label4 = New System.Windows.Forms.Label()
         Me.txtLessThan40 = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.txtLessThan50 = New System.Windows.Forms.TextBox()
+        Me.txtGreaterEqual41 = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.txtLessThan70 = New System.Windows.Forms.TextBox()
         Me.Label8 = New System.Windows.Forms.Label()
@@ -123,90 +123,96 @@ Partial Class frmWaterRating
         Me.Label5.TabIndex = 15
         Me.Label5.Text = "Less than or Equal to 40 :"
         '
-        'txtLessThan50
+        'txtGreaterEqual41
         '
-        Me.txtLessThan50.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtLessThan50.Location = New System.Drawing.Point(260, 168)
-        Me.txtLessThan50.Name = "txtLessThan50"
-        Me.txtLessThan50.Size = New System.Drawing.Size(82, 21)
-        Me.txtLessThan50.TabIndex = 6
-        Me.txtLessThan50.Text = "0.00"
-        Me.txtLessThan50.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        Me.txtGreaterEqual41.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtGreaterEqual41.Location = New System.Drawing.Point(260, 168)
+        Me.txtGreaterEqual41.Name = "txtGreaterEqual41"
+        Me.txtGreaterEqual41.Size = New System.Drawing.Size(82, 21)
+        Me.txtGreaterEqual41.TabIndex = 6
+        Me.txtGreaterEqual41.Text = "0.00"
+        Me.txtGreaterEqual41.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'Label6
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(80, 171)
+        Me.Label6.Location = New System.Drawing.Point(62, 171)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(149, 15)
+        Me.Label6.Size = New System.Drawing.Size(167, 15)
         Me.Label6.TabIndex = 16
-        Me.Label6.Text = "Less than or Equal to 50 :"
+        Me.Label6.Text = "Greater Than or Equal to 41 :"
         '
         'txtLessThan70
         '
         Me.txtLessThan70.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtLessThan70.Location = New System.Drawing.Point(260, 195)
+        Me.txtLessThan70.Location = New System.Drawing.Point(260, 253)
         Me.txtLessThan70.Name = "txtLessThan70"
         Me.txtLessThan70.Size = New System.Drawing.Size(82, 21)
         Me.txtLessThan70.TabIndex = 7
         Me.txtLessThan70.Text = "0.00"
         Me.txtLessThan70.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        Me.txtLessThan70.Visible = False
         '
         'Label8
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(80, 198)
+        Me.Label8.Location = New System.Drawing.Point(80, 256)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(149, 15)
         Me.Label8.TabIndex = 17
         Me.Label8.Text = "Less than or Equal to 70 :"
+        Me.Label8.Visible = False
         '
         'txtLessThan90
         '
         Me.txtLessThan90.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtLessThan90.Location = New System.Drawing.Point(260, 222)
+        Me.txtLessThan90.Location = New System.Drawing.Point(260, 280)
         Me.txtLessThan90.Name = "txtLessThan90"
         Me.txtLessThan90.Size = New System.Drawing.Size(82, 21)
         Me.txtLessThan90.TabIndex = 8
         Me.txtLessThan90.Text = "0.00"
         Me.txtLessThan90.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        Me.txtLessThan90.Visible = False
         '
         'Label10
         '
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(80, 225)
+        Me.Label10.Location = New System.Drawing.Point(80, 283)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(149, 15)
         Me.Label10.TabIndex = 18
         Me.Label10.Text = "Less than or Equal to 90 :"
+        Me.Label10.Visible = False
         '
         'txtGreaterThan91
         '
         Me.txtGreaterThan91.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtGreaterThan91.Location = New System.Drawing.Point(260, 249)
+        Me.txtGreaterThan91.Location = New System.Drawing.Point(260, 307)
         Me.txtGreaterThan91.Name = "txtGreaterThan91"
         Me.txtGreaterThan91.Size = New System.Drawing.Size(82, 21)
         Me.txtGreaterThan91.TabIndex = 9
         Me.txtGreaterThan91.Text = "0.00"
         Me.txtGreaterThan91.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        Me.txtGreaterThan91.Visible = False
         '
         'Label12
         '
         Me.Label12.AutoSize = True
         Me.Label12.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.Location = New System.Drawing.Point(65, 252)
+        Me.Label12.Location = New System.Drawing.Point(65, 310)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(164, 15)
         Me.Label12.TabIndex = 19
         Me.Label12.Text = "Greater than or Equal to 91 :"
+        Me.Label12.Visible = False
         '
         'btnSave
         '
         Me.btnSave.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnSave.Location = New System.Drawing.Point(260, 299)
+        Me.btnSave.Location = New System.Drawing.Point(260, 195)
         Me.btnSave.Name = "btnSave"
         Me.btnSave.Size = New System.Drawing.Size(82, 30)
         Me.btnSave.TabIndex = 10
@@ -247,7 +253,7 @@ Partial Class frmWaterRating
         Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.txtLessThan70)
         Me.Controls.Add(Me.Label8)
-        Me.Controls.Add(Me.txtLessThan50)
+        Me.Controls.Add(Me.txtGreaterEqual41)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.txtLessThan40)
         Me.Controls.Add(Me.Label5)
@@ -271,7 +277,7 @@ Partial Class frmWaterRating
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents txtLessThan40 As System.Windows.Forms.TextBox
     Friend WithEvents Label5 As System.Windows.Forms.Label
-    Friend WithEvents txtLessThan50 As System.Windows.Forms.TextBox
+    Friend WithEvents txtGreaterEqual41 As System.Windows.Forms.TextBox
     Friend WithEvents Label6 As System.Windows.Forms.Label
     Friend WithEvents txtLessThan70 As System.Windows.Forms.TextBox
     Friend WithEvents Label8 As System.Windows.Forms.Label
