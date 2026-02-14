@@ -42,13 +42,6 @@ MPWC.UI/MPWC.UI/obj/Debug/MPWC.UI.vbproj.CoreCompileInputs.cache
 MPWC.UI/MPWC.UI/obj/Debug/MPWC.UI.vbproj.FileListAbsolute.txt
 mpwcdb_jan162026.sql
 MPWCV2/MPWCV2/.vs/MPWCV2.vbproj.dtbcache.json
-MPWCV2/MPWCV2/Billing/Reading/frmMeterReadingDetails.vb
-MPWCV2/MPWCV2/frmMain.vb
-MPWCV2/MPWCV2/Maintenance/WaterRate/frmCommercialRate.Designer.vb
-MPWCV2/MPWCV2/Maintenance/WaterRate/frmCommercialRate.vb
-MPWCV2/MPWCV2/Maintenance/WaterRate/frmWaterRating.Designer.vb
-MPWCV2/MPWCV2/Maintenance/WaterRate/frmWaterRating.vb
-MPWCV2/MPWCV2/MPWCGenaral.vb
 MPWCV2/MPWCV2/obj/Debug/DesignTimeResolveAssemblyReferences.cache
 MPWCV2/MPWCV2/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
 MPWCV2/MPWCV2/obj/Debug/MPWCV2.exe
@@ -81,13 +74,6 @@ MPWC.UI/MPWC.UI/obj/Debug/MPWC.UI.vbproj.AssemblyReference.cache
 MPWC.UI/MPWC.UI/obj/Debug/MPWC.UI.vbproj.CoreCompileInputs.cache
 MPWC.UI/MPWC.UI/obj/Debug/MPWC.UI.vbproj.FileListAbsolute.txt
 MPWCV2/MPWCV2/.vs/MPWCV2.vbproj.dtbcache.json
-MPWCV2/MPWCV2/Billing/Reading/frmMeterReadingDetails.vb
-MPWCV2/MPWCV2/frmMain.vb
-MPWCV2/MPWCV2/Maintenance/WaterRate/frmCommercialRate.Designer.vb
-MPWCV2/MPWCV2/Maintenance/WaterRate/frmCommercialRate.vb
-MPWCV2/MPWCV2/Maintenance/WaterRate/frmWaterRating.Designer.vb
-MPWCV2/MPWCV2/Maintenance/WaterRate/frmWaterRating.vb
-MPWCV2/MPWCV2/MPWCGenaral.vb
 MPWCV2/MPWCV2/obj/Debug/DesignTimeResolveAssemblyReferences.cache
 MPWCV2/MPWCV2/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
 MPWCV2/MPWCV2/obj/Debug/MPWCV2.exe
