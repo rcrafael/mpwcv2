@@ -25,6 +25,7 @@ Public Class frmMain
             CRate(6) = .Item("LessEqual_70")
             CRate(7) = .Item("LessEqual_90")
             CRate(8) = .Item("GreaterEqual_91")
+            CRate(9) = .Item("GreaterEqual_41") 'change request  Jan 06, 2026
         End With
 
         With dtCOMR.Rows(0)
@@ -32,6 +33,8 @@ Public Class frmMain
             ComRate(1) = .Item("LessEqual30")
             ComRate(2) = .Item("LessEqual500")
             ComRate(3) = .Item("GreaterEqual501")
+            ComRate(4) = .Item("LessEqual1000") 'change request  Jan 06, 2026
+            ComRate(5) = .Item("GreaterEqual1001") 'change request  Jan 06, 2026
         End With
 
         With dtSeptage.Rows(0)
