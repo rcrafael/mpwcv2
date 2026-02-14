@@ -21,7 +21,7 @@ Public Class ORReceipt
 
         strDetailsQuery = String.Format("SELECT SUM(ReadingAmountPaid) as WaterService,SUM(Parts) as Parts,SUM(Membership) as MemberShip, " &
                         " SUM(Tapping) as Tapping,SUM(Calibration) + SUM(MaintenanceFee) as Calibration ,SUM(Reconnection) As Reconnection, " &
-                        " SUM(SubReceivable) As SubReceivable,SUM(Penalty) as Penalty,SUM(OtherCollection) as Others, SUM(SeniorDiscount) AS LessOthers, SUM(SeptageFee) AS SeptageFee FROM ORRD WHERE ORNo = {0}", pORNo)
+                        " SUM(SubReceivable) As SubReceivable,SUM(Penalty) as Penalty,SUM(OtherCollection) as Others, SUM(SeniorDiscount) AS LessOthers, SUM(SeptageFee) AS SeptageFee, ISNULL(OtherDesc,'') AS OtherDesc FROM ORRD WHERE ORNo = {0} GROUP BY OtherDesc", pORNo)
 
     End Sub
 
@@ -91,52 +91,123 @@ Public Class ORReceipt
 
         With xlSheet
 
+            '.Cells("A3").Value = dtb.Rows(0).Item("MeterNo").ToString
+            '.Cells("D3").Value = Format(dtb.Rows(0).Item("ORDate"), "MMM dd, yyyy")
+            '.Cells("B4").Value = dtb.Rows(0).Item("CustomerName").ToString
+            '.Cells("A5").Value = dtb.Rows(0).Item("Address").ToString
+            '.Cells("E9").Value = dtbDetails.Rows(0).Item("WaterService")
+            '.Cells("E9:F9").Style.Numberformat.Format = CustomFormat.AMOUNTFORMAT
+            '.Cells("E11").Value = dtbDetails.Rows(0).Item("Penalty")
+            '.Cells("E11:F11").Style.Numberformat.Format = CustomFormat.AMOUNTFORMAT
+            '.Cells("E12").Value = dtbDetails.Rows(0).Item("Parts")
+            '.Cells("E12").Style.Numberformat.Format = CustomFormat.AMOUNTFORMAT
+            '.Cells("E13").Value = dtbDetails.Rows(0).Item("Membership")
+            '.Cells("E13").Style.Numberformat.Format = CustomFormat.AMOUNTFORMAT
+            '.Cells("E14").Value = dtbDetails.Rows(0).Item("Tapping")
+            '.Cells("E14").Style.Numberformat.Format = CustomFormat.AMOUNTFORMAT
+            '.Cells("E15").Value = 0
+            '.Cells("E15").Style.Numberformat.Format = CustomFormat.AMOUNTFORMAT
+            '.Cells("E16").Value = dtbDetails.Rows(0).Item("Reconnection")
+            '.Cells("E16").Style.Numberformat.Format = CustomFormat.AMOUNTFORMAT
+            '.Cells("E17").Value = dtbDetails.Rows(0).Item("Calibration")
+            '.Cells("E17").Style.Numberformat.Format = CustomFormat.AMOUNTFORMAT
+            '.Cells("E18").Value = getCBUAmount(dtb.Rows(0).Item("ORNo"))
+            '.Cells("E18").Style.Numberformat.Format = CustomFormat.AMOUNTFORMAT
+            '.Cells("E19").Value = dtbDetails.Rows(0).Item("SubReceivable")
+            '.Cells("E19").Style.Numberformat.Format = CustomFormat.AMOUNTFORMAT
+            '.Cells("E20").Value = dtbDetails.Rows(0).Item("SeptageFee")
+            '.Cells("E20").Style.Numberformat.Format = CustomFormat.AMOUNTFORMAT
+            '.Cells("E21").Value = dtbDetails.Rows(0).Item("Others")
+            '.Cells("E21").Style.Numberformat.Format = CustomFormat.AMOUNTFORMAT
+
+            '.Cells("E23").Formula = "=SUM(E9,E11,E12,E13,E14,E15,E16,E17,E18,E19,E20,E21)"
+            '.Cells("E23").Style.Numberformat.Format = CustomFormat.AMOUNTFORMAT
+
+            '.Cells("E25").Value = 0
+            '.Cells("E26").Value = 0
+            '.Cells("E27").Value = dtbDetails.Rows(0).Item("LessOthers")
+            '.Cells("E25").Style.Numberformat.Format = CustomFormat.AMOUNTFORMAT
+            '.Cells("E26").Style.Numberformat.Format = CustomFormat.AMOUNTFORMAT
+            '.Cells("E27").Style.Numberformat.Format = CustomFormat.AMOUNTFORMAT
+
+
+            '.Cells("E29").Formula = "=(E23 - SUM(E25,E26,E27))"
+            '.Cells("E29").Style.Numberformat.Format = CustomFormat.AMOUNTFORMAT
+
+            '.Cells("B10").Value = getMonths(dtb.Rows(0).Item("ORNo").ToString)
+
+            '.Cells("A22").Value = getOtherDesc(dtb.Rows(0).Item("ORNo").ToString)
+
+
+
             .Cells("A3").Value = dtb.Rows(0).Item("MeterNo").ToString
             .Cells("D3").Value = Format(dtb.Rows(0).Item("ORDate"), "MMM dd, yyyy")
             .Cells("B4").Value = dtb.Rows(0).Item("CustomerName").ToString
             .Cells("A5").Value = dtb.Rows(0).Item("Address").ToString
-            .Cells("E9").Value = dtbDetails.Rows(0).Item("WaterService")
+
+            .Cells("E8").Value = dtbDetails.Rows(0).Item("WaterService")
+            .Cells("E8:F8").Style.Numberformat.Format = CustomFormat.AMOUNTFORMAT
+
+            .Cells("E9").Value = dtbDetails.Rows(0).Item("Penalty")
             .Cells("E9:F9").Style.Numberformat.Format = CustomFormat.AMOUNTFORMAT
-            .Cells("E11").Value = dtbDetails.Rows(0).Item("Penalty")
+
+            .Cells("E10").Value = dtbDetails.Rows(0).Item("Parts")
+            .Cells("E10:F10").Style.Numberformat.Format = CustomFormat.AMOUNTFORMAT
+
+            .Cells("E11").Value = dtbDetails.Rows(0).Item("Membership")
             .Cells("E11:F11").Style.Numberformat.Format = CustomFormat.AMOUNTFORMAT
-            .Cells("E12").Value = dtbDetails.Rows(0).Item("Parts")
-            .Cells("E12").Style.Numberformat.Format = CustomFormat.AMOUNTFORMAT
-            .Cells("E13").Value = dtbDetails.Rows(0).Item("Membership")
-            .Cells("E13").Style.Numberformat.Format = CustomFormat.AMOUNTFORMAT
-            .Cells("E14").Value = dtbDetails.Rows(0).Item("Tapping")
-            .Cells("E14").Style.Numberformat.Format = CustomFormat.AMOUNTFORMAT
-            .Cells("E15").Value = 0
-            .Cells("E15").Style.Numberformat.Format = CustomFormat.AMOUNTFORMAT
-            .Cells("E16").Value = dtbDetails.Rows(0).Item("Reconnection")
-            .Cells("E16").Style.Numberformat.Format = CustomFormat.AMOUNTFORMAT
-            .Cells("E17").Value = dtbDetails.Rows(0).Item("Calibration")
-            .Cells("E17").Style.Numberformat.Format = CustomFormat.AMOUNTFORMAT
-            .Cells("E18").Value = getCBUAmount(dtb.Rows(0).Item("ORNo"))
-            .Cells("E18").Style.Numberformat.Format = CustomFormat.AMOUNTFORMAT
-            .Cells("E19").Value = dtbDetails.Rows(0).Item("SubReceivable")
-            .Cells("E19").Style.Numberformat.Format = CustomFormat.AMOUNTFORMAT
-            .Cells("E20").Value = dtbDetails.Rows(0).Item("SeptageFee")
-            .Cells("E20").Style.Numberformat.Format = CustomFormat.AMOUNTFORMAT
-            .Cells("E21").Value = dtbDetails.Rows(0).Item("Others")
-            .Cells("E21").Style.Numberformat.Format = CustomFormat.AMOUNTFORMAT
 
-            .Cells("E23").Formula = "=SUM(E9,E11,E12,E13,E14,E15,E16,E17,E18,E19,E20,E21)"
-            .Cells("E23").Style.Numberformat.Format = CustomFormat.AMOUNTFORMAT
+            .Cells("E12").Value = dtbDetails.Rows(0).Item("Tapping")
+            .Cells("E12:F12").Style.Numberformat.Format = CustomFormat.AMOUNTFORMAT
 
+            .Cells("E13").Value = dtbDetails.Rows(0).Item("Reconnection")
+            .Cells("E13:F13").Style.Numberformat.Format = CustomFormat.AMOUNTFORMAT
+
+            .Cells("E14").Value = dtbDetails.Rows(0).Item("Calibration")
+            .Cells("E14:F14").Style.Numberformat.Format = CustomFormat.AMOUNTFORMAT
+
+            .Cells("E15").Value = dtbDetails.Rows(0).Item("SeptageFee")
+            .Cells("E15:F15").Style.Numberformat.Format = CustomFormat.AMOUNTFORMAT
+
+            .Cells("E16").Value = 0 'sharecap
+            .Cells("E16:F16").Style.Numberformat.Format = CustomFormat.AMOUNTFORMAT
+
+            .Cells("E17").Value = dtbDetails.Rows(0).Item("SubReceivable") 'getCBUAmount(dtb.Rows(0).Item("ORNo"))
+            .Cells("E17:F17").Style.Numberformat.Format = CustomFormat.AMOUNTFORMAT
+
+
+            .Cells("E19").Formula = "=SUM(E8:E17)"
+            .Cells("E19:F19").Style.Numberformat.Format = CustomFormat.AMOUNTFORMAT
+
+            .Cells("E21").Value = 0
+            .Cells("E22").Value = 0
+            .Cells("E23").Value = 0
+            .Cells("E24").Value = 0
             .Cells("E25").Value = 0
             .Cells("E26").Value = 0
-            .Cells("E27").Value = dtbDetails.Rows(0).Item("LessOthers")
-            .Cells("E25").Style.Numberformat.Format = CustomFormat.AMOUNTFORMAT
-            .Cells("E26").Style.Numberformat.Format = CustomFormat.AMOUNTFORMAT
-            .Cells("E27").Style.Numberformat.Format = CustomFormat.AMOUNTFORMAT
+            .Cells("B27").Value = dtbDetails.Rows(0).Item("OtherDesc")
+            .Cells("E27").Value = dtbDetails.Rows(0).Item("Others")
+            .Cells("E27:F27").Style.Numberformat.Format = CustomFormat.AMOUNTFORMAT
 
 
-            .Cells("E29").Formula = "=(E23 - SUM(E25,E26,E27))"
-            .Cells("E29").Style.Numberformat.Format = CustomFormat.AMOUNTFORMAT
 
-            .Cells("B10").Value = getMonths(dtb.Rows(0).Item("ORNo").ToString)
+            .Cells("E29").Value = dtbDetails.Rows(0).Item("LessOthers")
 
-            .Cells("A22").Value = getOtherDesc(dtb.Rows(0).Item("ORNo").ToString)
+            .Cells("E21:F21").Style.Numberformat.Format = CustomFormat.AMOUNTFORMAT
+            .Cells("E22:F22").Style.Numberformat.Format = CustomFormat.AMOUNTFORMAT
+            .Cells("E23:F23").Style.Numberformat.Format = CustomFormat.AMOUNTFORMAT
+            .Cells("E24:F24").Style.Numberformat.Format = CustomFormat.AMOUNTFORMAT
+            .Cells("E25:F25").Style.Numberformat.Format = CustomFormat.AMOUNTFORMAT
+            .Cells("E26:F26").Style.Numberformat.Format = CustomFormat.AMOUNTFORMAT
+            .Cells("E27:F27").Style.Numberformat.Format = CustomFormat.AMOUNTFORMAT
+            .Cells("E29:F29").Style.Numberformat.Format = CustomFormat.AMOUNTFORMAT
+
+            .Cells("E30").Formula = "=SUM(E8:E17,E21:F27)-E29"
+            .Cells("E30:F30").Style.Numberformat.Format = CustomFormat.AMOUNTFORMAT
+
+            .Cells("C8").Value = getMonths(dtb.Rows(0).Item("ORNo").ToString)
+
+            '.Cells("A22").Value = getOtherDesc(dtb.Rows(0).Item("ORNo").ToString)
         End With
 
     End Sub

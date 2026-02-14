@@ -190,7 +190,6 @@ Public Class frmOfficialReceiptGrid
 
     Public Overrides Sub PrintRecord()
 
-
         Dim strTemplate As String = CurDir() & "/or_template.xlsx"
         Dim filename As IO.FileInfo
         Dim newFI As IO.FileInfo
@@ -201,7 +200,12 @@ Public Class frmOfficialReceiptGrid
         End If
 
         If IO.File.Exists(CurDir() & "/tempOR.xlsx") Then
-            IO.File.Delete(CurDir() & "/tempOR.xlsx")
+            Try
+                IO.File.Delete(CurDir() & "/tempOR.xlsx")
+            Catch ex As Exception
+                MessageBox.Show(Me, ex.Message, "Printing Error...", vbOK, vbExclamation)
+            End Try
+
         End If
 
         newFI = New FileInfo(CurDir() & "/tempOR.xlsx")

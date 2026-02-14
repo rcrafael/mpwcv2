@@ -1,12 +1,12 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Rcrafael\\Documents\\GitHub\\mpwcv2\\MPWC.UI\\",
+  "WorkspaceRootPath": "C:\\Users\\Rcrafael\\Documents\\mahabang parang\\desktop\\mpwcv2\\MPWC.UI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Rcrafael\\Documents\\mahabang parang\\desktop\\mpwcv2\\MPWCV2\\MPWCV2\\Reports\\OfficialReceipt Report\\ORReceipt.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+      "AbsoluteMoniker": "D:0:0:{8F0CC422-EF35-47B4-8B34-B1047681BBBE}|..\\MPWCV2\\MPWCV2\\MPWCV2.vbproj|c:\\users\\rcrafael\\documents\\mahabang parang\\desktop\\mpwcv2\\mpwcv2\\mpwcv2\\reports\\officialreceipt report\\orreceipt.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Rcrafael\\Documents\\mahabang parang\\desktop\\mpwcv2\\MPWCV2\\MPWCV2\\Collection\\OfficialReceipt\\frmOfficialReceiptGrid.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+      "AbsoluteMoniker": "D:0:0:{8F0CC422-EF35-47B4-8B34-B1047681BBBE}|..\\MPWCV2\\MPWCV2\\MPWCV2.vbproj|c:\\users\\rcrafael\\documents\\mahabang parang\\desktop\\mpwcv2\\mpwcv2\\mpwcv2\\collection\\officialreceipt\\frmofficialreceiptgrid.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     }
   ],
   "DocumentGroupContainers": [
@@ -16,31 +16,28 @@
       "DocumentGroups": [
         {
           "DockedWidth": 212,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "frmOfficialReceiptGrid.vb",
               "DocumentMoniker": "C:\\Users\\Rcrafael\\Documents\\mahabang parang\\desktop\\mpwcv2\\MPWCV2\\MPWCV2\\Collection\\OfficialReceipt\\frmOfficialReceiptGrid.vb",
-              "RelativeDocumentMoniker": "..\\..\\..\\mahabang parang\\desktop\\mpwcv2\\MPWCV2\\MPWCV2\\Collection\\OfficialReceipt\\frmOfficialReceiptGrid.vb",
+              "RelativeDocumentMoniker": "..\\MPWCV2\\MPWCV2\\Collection\\OfficialReceipt\\frmOfficialReceiptGrid.vb",
               "ToolTip": "C:\\Users\\Rcrafael\\Documents\\mahabang parang\\desktop\\mpwcv2\\MPWCV2\\MPWCV2\\Collection\\OfficialReceipt\\frmOfficialReceiptGrid.vb",
-              "RelativeToolTip": "..\\..\\..\\mahabang parang\\desktop\\mpwcv2\\MPWCV2\\MPWCV2\\Collection\\OfficialReceipt\\frmOfficialReceiptGrid.vb",
+              "RelativeToolTip": "..\\MPWCV2\\MPWCV2\\Collection\\OfficialReceipt\\frmOfficialReceiptGrid.vb",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-10-09T14:43:42.892Z"
+              "WhenOpened": "2025-10-09T14:43:42.892Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "ORReceipt.vb",
               "DocumentMoniker": "C:\\Users\\Rcrafael\\Documents\\mahabang parang\\desktop\\mpwcv2\\MPWCV2\\MPWCV2\\Reports\\OfficialReceipt Report\\ORReceipt.vb",
-              "RelativeDocumentMoniker": "..\\..\\..\\mahabang parang\\desktop\\mpwcv2\\MPWCV2\\MPWCV2\\Reports\\OfficialReceipt Report\\ORReceipt.vb",
+              "RelativeDocumentMoniker": "..\\MPWCV2\\MPWCV2\\Reports\\OfficialReceipt Report\\ORReceipt.vb",
               "ToolTip": "C:\\Users\\Rcrafael\\Documents\\mahabang parang\\desktop\\mpwcv2\\MPWCV2\\MPWCV2\\Reports\\OfficialReceipt Report\\ORReceipt.vb",
-              "RelativeToolTip": "..\\..\\..\\mahabang parang\\desktop\\mpwcv2\\MPWCV2\\MPWCV2\\Reports\\OfficialReceipt Report\\ORReceipt.vb",
+              "RelativeToolTip": "..\\MPWCV2\\MPWCV2\\Reports\\OfficialReceipt Report\\ORReceipt.vb",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2025-10-06T12:53:35.954Z",
               "EditorCaption": ""
